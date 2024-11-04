@@ -1,6 +1,4 @@
-------------------------------
---  Author: Yao Zhang
-------------------------------
+
 module Main where
 
 
@@ -9,38 +7,38 @@ import System.IO
 import Data.List (intersperse, transpose)
 import Data.Maybe
 
--- Definição de tipos e constantes
+-- definindo os tipos de constante --> pensando na formacao das imgs
 type Colour = Int
 data RGB = RGB Colour Colour Colour deriving Show
 type Bitmap = [[RGB]]
 
--- Validação de cor e RGB
+-- validando as cores do rgb
 validColour :: Colour -> Bool
 validColour colour = colour >= 0 && colour <= 255
 
 validRGB :: RGB -> Bool
 validRGB (RGB a b c) = all validColour [a, b, c]
 
--- Função para o cabeçalho do formato PPM
+-- cabecalho do arquivo ppm
 ppmHeader :: (Int, Int) -> String
 ppmHeader (a, b) = "P6 " ++ show a ++ " " ++ show b ++ " 255\n"
 
--- Validação de bitmap
+-- validando o bitmap
 validBitmap :: Bitmap -> Maybe (Int, Int)
 validBitmap [] = Just (0, 0)
 validBitmap a@(xs : xss)
   | all (all validRGB) a && all (== length xs) (map length a) = Just (length xs, length a)
   | otherwise = Nothing
 
--- Função para codificar uma cor RGB em string binária
+-- codificando uma cor RGB em string binaria
 encodeRGB :: RGB -> String
 encodeRGB (RGB a b c) = map chr [a, b, c]
 
--- Função para codificar o bitmap inteiro
+--  codificando o bitmap inteiro
 encodeBitmap :: Bitmap -> String
 encodeBitmap = concatMap (concatMap encodeRGB)
 
--- Função para salvar o arquivo PPM em modo binário
+-- salvando o arquivo PPM em modo binario
 writeBinaryFile :: FilePath -> String -> IO ()
 writeBinaryFile f x = do
   h <- openBinaryFile f WriteMode
@@ -65,7 +63,7 @@ mandelbrot p = iterate (nextPoint p) (0, 0)
 julia :: Point -> Fractal
 julia c = iterate (nextPoint c)
 
--- Renderização de fractais
+-- renderizando os fractais
 type Image = Point -> RGB
 
 fairlyClose :: Point -> Bool
@@ -83,7 +81,7 @@ sample pss i = map (map i) pss
 draw :: [[Point]] -> Fractal -> Bitmap
 draw pss f = sample pss (fracImage f)
 
--- Paleta de cores
+-- paleta de cores
 type Palette = [RGB]
 
 palette :: Palette
@@ -102,7 +100,7 @@ yellow = RGB 255 255 0
 red = RGB 255 0 0
 white = RGB 255 255 255
 
--- Funções úteis para gerar bitmaps de um Image
+
 size :: Int
 size = 400
 
@@ -144,7 +142,7 @@ figure2 = draw points (julia (0.32, 0.043))
   where
     points = grid size size (-1.5, -1.5) (1.5, 1.5)
 
--- Função principal para salvar as imagens de fractais
+-- Funcao principal para salvar as imagens de fractais
 main :: IO ()
 main = do
   putStrLn "Writing mandelbrot bitmap..."
