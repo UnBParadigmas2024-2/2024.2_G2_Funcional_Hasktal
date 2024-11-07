@@ -12,7 +12,7 @@ main = play (InWindow "Triangulo de Sierpinski" (800, 800) (450, 450))
 
 drawState :: GameState -> Picture
 drawState gameState = Pictures 
-    [ Pictures (map drawTriangle (sierpinski gameState ((-350, -350), (350, -350), (0, 350))))
+    [ Pictures (map (drawTriangle gameState) (sierpinski gameState ((-350, -350), (350, -350), (0, 350))))
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
     , Translate (-350) 200 $ button (-1)
     , Translate 300 200 $ button 1
