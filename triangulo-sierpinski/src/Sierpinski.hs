@@ -1,7 +1,8 @@
-module Sierpinski (sierpinski, drawTriangle, drawSierpinski, button, handleEvent, updateState) where
+module Sierpinski (drawSierpinski, handleEvent, updateState) where
 
 import Graphics.Gloss
-import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..))
+import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..), MouseButton(..))
+
 
 type MyPoint = (Float, Float)
 type Triangle = (MyPoint, MyPoint, MyPoint)
@@ -20,7 +21,7 @@ drawTriangle :: Int -> Triangle -> Picture
 drawTriangle depth (p1, p2, p3) =
     let triColor = if depth == 0
         then makeColor 0 0 0 1
-        else makeColor (fromIntegral depth / 7) (1 - fromIntegral depth / 7) (0.7) 1
+        else makeColor (fromIntegral depth / 7) (1 - fromIntegral depth / 7) 0.7 1
     in Color triColor (polygon [p1, p2, p3])
 
 drawSierpinski :: GameState -> Picture
