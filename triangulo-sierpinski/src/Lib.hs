@@ -1,5 +1,7 @@
 module Lib (sierpinski, drawTriangle) where
 
+import Graphics.Gloss
+
 type MyPoint = (Float, Float)
 type Triangle = (MyPoint, MyPoint, MyPoint)
 
@@ -12,3 +14,5 @@ sierpinski n (p1, p2, p3) =
   where
     midPoint (x1, y1) (x2, y2) = ((x1 + x2) / 2, (y1 + y2) / 2)
 
+drawTriangle :: Triangle -> Picture
+drawTriangle (p1, p2, p3) = polygon [p1, p2, p3]
