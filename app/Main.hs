@@ -1,83 +1,34 @@
 module Main (main) where
 
 import Graphics.Gloss
-import Graphics.Gloss.Interface.Pure.Game
+import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..), MouseButton(..))
+import Sierpinski (drawSierpinski)
 
--- Todas as telas do programa
-data Screen = Menu | Mandelbrot | Julia | Sierpinski | Koch | ArvorePitagoras deriving (Eq, Show)
-
--- | Estado do app, contendo a tela atual
-data AppState = AppState
-  { currentScreen :: Screen
-  }
-
--- | Estado inicial do app, começando com o Menu
-initialState :: AppState
-initialState = AppState { currentScreen = Menu }
+data GameState = StartScreen | SierpinskiScreen Int -- Alterado para armazenar o estado do Sierpinski
 
 main :: IO ()
-main = play window white 30 initialState render handleInput update
-  where
-    window = InWindow "Hasktal" (800, 600) (100, 100)
-    update _ = id
+main = play (InWindow "Hasktal" (800, 800) (450, 450)) 
+            white 60 (StartScreen) drawState handleMainEvent updateMainState
 
--- | Renderiza a tela com base no AppState
-render :: AppState -> Picture
-render state = case currentScreen state of
-    Menu            -> renderMenu
-    Mandelbrot      -> renderMandelbrot
-    Julia           -> renderJulia
-    Sierpinski      -> renderSierpinski
-    Koch            -> renderKoch
-    ArvorePitagoras -> renderArvorePitagoras
-
-renderMenu :: Picture
-renderMenu = Pictures
-  [
-    translate (-200) 100 $ scale 0.3 0.3 $ text "HASKTAL",
-    translate (-200) (-50) $ scale 0.2 0.2 $ text "[1] Mandelbrot",
-    translate (-200) (-100) $ scale 0.2 0.2 $ text "[2] Julia",
-    translate (-200) (-150) $ scale 0.2 0.2 $ text "[3] Sierpinski",
-    translate (-200) (-200) $ scale 0.2 0.2 $ text "[4] Koch",
-    translate (-200) (-250) $ scale 0.2 0.2 $ text "[5] Arvore de Pitagoras"
-  ]
-
-renderMandelbrot :: Picture
-renderMandelbrot = Pictures
-    [ translate (-200) 250 $ scale 0.3 0.3 $ text "Mandelbrot"
-    , translate (-200) (-50) $ scale 0.2 0.2 $ text "Digite 'm' para voltar"
+drawState :: GameState -> Picture
+drawState (StartScreen) = Pictures
+    [ Translate (-50) 200 $ Scale 0.3 0.3 $ Text "Hasktal"
+    , Translate (-50) (-50) $ Scale 0.2 0.2 $ Text "Sierpinski"
     ]
+drawState (SierpinskiScreen iterations) = 
+    Pictures
+        [ Translate (-350) 350 $ Scale 0.2 0.2 $ Text "Voltar"
+        , drawSierpinski iterations
+        ]
 
-renderJulia :: Picture
-renderJulia = Pictures
-    [ translate (-200) 250 $ scale 0.3 0.3 $ text "Julia"
-    , translate (-200) (-50) $ scale 0.2 0.2 $ text "Digite 'm' para voltar"
-    ]
+handleMainEvent :: Event -> GameState -> GameState
+handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (StartScreen)
+    | x >= (-50) && x <= 150 && y >= (-50) && y <= 50 = SierpinskiScreen 0
+handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (SierpinskiScreen iterations)
+    | x >= (-350) && x <= (-150) && y >= 350 && y <= 400 = StartScreen
+    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = SierpinskiScreen (max 0 (iterations - 1))
+    | x >= 275 && x <= 325 && y >= 175 && y <= 225 = SierpinskiScreen (iterations + 1)
+handleMainEvent _ state = state
 
-renderSierpinski :: Picture
-renderSierpinski = Pictures
-    [ translate (-200) 250 $ scale 0.3 0.3 $ text "Sierpinski"
-    , translate (-200) (-50) $ scale 0.2 0.2 $ text "Digite 'm' para voltar"
-    ]
-
-renderKoch :: Picture
-renderKoch = Pictures
-    [ translate (-200) 250 $ scale 0.3 0.3 $ text "Koch"
-    , translate (-200) (-50) $ scale 0.2 0.2 $ text "Digite 'm' para voltar"
-    ]
-
-renderArvorePitagoras :: Picture
-renderArvorePitagoras = Pictures
-    [ translate (-200) 250 $ scale 0.3 0.3 $ text "Arvore de Pitagoras"
-    , translate (-200) (-50) $ scale 0.2 0.2 $ text "Digite 'm' para voltar"
-    ]
-
--- | Inputs do teclados para mudar de tela
-handleInput :: Event -> AppState -> AppState
-handleInput (EventKey (Char '1') Down _ _) state = state { currentScreen = Mandelbrot }
-handleInput (EventKey (Char '2') Down _ _) state = state { currentScreen = Julia }
-handleInput (EventKey (Char '3') Down _ _) state = state { currentScreen = Sierpinski }
-handleInput (EventKey (Char '4') Down _ _) state = state { currentScreen = Koch }
-handleInput (EventKey (Char '5') Down _ _) state = state { currentScreen = ArvorePitagoras }
-handleInput (EventKey (Char 'm') Down _ _) state = state { currentScreen = Menu }
-handleInput _ state = state
+updateMainState :: Float -> GameState -> GameState
+updateMainState _ state = state
