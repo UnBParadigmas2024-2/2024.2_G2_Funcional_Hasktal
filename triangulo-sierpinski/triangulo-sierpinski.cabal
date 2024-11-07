@@ -25,7 +25,8 @@ source-repository head
 
 library
   exposed-modules:
-      Sierpinski
+      Sierpinski,
+      Mandelbrot
   other-modules:
       Paths_triangulo_sierpinski
   autogen-modules:
