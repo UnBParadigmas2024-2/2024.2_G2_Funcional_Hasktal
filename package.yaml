@@ -1,6 +1,6 @@
-name:                triangulo-sierpinski
+name:                hasktal
 version:             0.1.0.0
-github:              "githubuser/triangulo-sierpinski"
+github:              "githubuser/hasktal"
 license:             BSD-3-Clause
 author:              "Author name here"
 maintainer:          "example@example.com"
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/triangulo-sierpinski#readme>
+description:         Please see the README on GitHub at <https://github.com/githubuser/hasktal#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -38,7 +38,7 @@ library:
   source-dirs: src
 
 executables:
-  triangulo-sierpinski-exe:
+  hasktal-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -46,10 +46,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - triangulo-sierpinski
+    - hasktal
 
 tests:
-  triangulo-sierpinski-test:
+  hasktal-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -57,4 +57,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - triangulo-sierpinski
+    - hasktal

@@ -1,4 +1,4 @@
-# Changelog for `triangulo-sierpinski`
+# Changelog for `hasktal`
 
 All notable changes to this project will be documented in this file.
 
