@@ -11,59 +11,49 @@ windowHeight = 800
 
 data State = State { level :: Int, zoomLevel :: Float, angle :: Float, isActive :: Bool, maxSteps :: Int }
 
-initialState :: Int -> State
-initialState steps = State { level = 0, zoomLevel = 1.0, angle = 0, isActive = True, maxSteps = steps }
-
--- Função para ler a quantidade de passos do usuário
-readSteps :: IO Int
-readSteps = do
-    putStr "Digite a quantidade de passos (0 a 7): "
-    input <- getLine
-    let steps = read input :: Int
-    if steps < 0 || steps > 7
-        then do
-            putStrLn "Número inválido! Tente novamente."
-            readSteps  
-        else return steps
+initialState :: State
+initialState = State { level = 0, zoomLevel = 1.0, angle = 0, isActive = True, maxSteps = 7 }
 
 main :: IO ()
 main = do
   hSetBuffering stdout NoBuffering
-  steps <- readSteps 
-  putStrLn "Use as teclas + e - para ajustar o zoom, setas para rotacionar, e Esc para sair."
+  putStrLn "Clique com o botão esquerdo para aumentar os passos e com o botão direito para diminuir, use setas para rotacionar e Esc para sair."
   play
     (InWindow "Fractal Tree" (windowWidth, windowHeight) (20, 20))
     black
     20 
-    (initialState steps)  
+    initialState  
     drawTree
     handleEvents
     updateTree
 
--- Função para desenhar a árvore com base no estado atual
 drawTree :: State -> Picture
-drawTree (State lvl z ang act maxLvl)
-  | not act = Blank
-  | otherwise = Scale z z $ Rotate ang $ Translate 0 (-300) (generateTree (min lvl maxLvl) brown)
+drawTree (State lvl z ang act maxLvl) =
+  Pictures [ Scale z z $ Rotate ang $ Translate 0 (-300) (generateTree (min lvl maxLvl) brown) ]
 
 handleEvents :: Event -> State -> State
-handleEvents (EventKey (Char '+') Down _ _) state = state { zoomLevel = zoomLevel state * 1.1 }
-handleEvents (EventKey (Char '-') Down _ _) state = state { zoomLevel = zoomLevel state / 1.1 }
 handleEvents (EventKey (SpecialKey KeyLeft) Down _ _) state = state { angle = angle state - 5 }
 handleEvents (EventKey (SpecialKey KeyRight) Down _ _) state = state { angle = angle state + 5 }
 handleEvents (EventKey (SpecialKey KeyEsc) Down _ _) state = state { isActive = False }
+
+handleEvents (EventKey (MouseButton LeftButton) Down _ _) state
+  | level state < maxSteps state = state { level = level state + 1 } 
+  | otherwise = state  
+
+handleEvents (EventKey (MouseButton RightButton) Down _ _) state
+  | level state > 0 = state { level = level state - 1 }  
+  | otherwise = state  
+
 handleEvents _ state = state
 
 updateTree :: Float -> State -> State
 updateTree _ state
   | not (isActive state) = state
-  | level state < maxSteps state = state { level = level state + 1 } 
   | otherwise = state  
 
 drawTrunk :: Color -> Picture
 drawTrunk color = Color color (Polygon [(30,0), (15,300), (-15,300), (-30,0)])
 
--- Função recursiva para desenhar a árvore
 generateTree :: Int -> Color -> Picture
 generateTree 0 color = drawTrunk color
 generateTree n color = Pictures [drawTrunk color,
