@@ -7,6 +7,8 @@ type MyPoint = (Float, Float)
 type LineSegment = (MyPoint, MyPoint)
 type GameState = Int
 
+-- Implementa o fractal de Koch de forma recursiva
+-- Lembrando que os triângulos aqui são equiláteros
 koch :: Int -> LineSegment -> [LineSegment]
 koch 0 segment = [segment]
 koch n ((x1, y1), (x2, y2)) =
@@ -27,9 +29,11 @@ koch n ((x1, y1), (x2, y2)) =
     heightY = midY + dx * sqrt 3 / 2
     p3 = (heightX, heightY)
 
+-- Função que desenha um segmento de reta
 drawSegment :: LineSegment -> Picture
 drawSegment (p1, p2) = Color black (Line [p1, p2])
 
+-- Desenha o fractal depois que foi calculado com a função koch
 drawKoch :: GameState -> Picture
 drawKoch gameState = Pictures 
     [ Pictures (map drawSegment (concatMap (koch gameState) [(start, end)]))
@@ -41,12 +45,14 @@ drawKoch gameState = Pictures
     start = (-350, -150)
     end = (350, -150)
 
+-- Desenha os botões de aumentar e diminuir iterações
 button :: Int -> Picture
 button sign = Pictures 
     [ Color black $ rectangleSolid 50 50
     , Color white $ Translate (-10) (-10) $ Scale 0.2 0.2 $ Text (if sign == 1 then "+" else "-")
     ]
 
+-- Lida com os eventos jogo, aumentar ou diminuir iteração
 handleEvent :: Event -> GameState -> GameState
 handleEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) gameState
     | x >= -375 && x <= -325 && y >= 175 && y <= 225 = max 0 (gameState - 1)
