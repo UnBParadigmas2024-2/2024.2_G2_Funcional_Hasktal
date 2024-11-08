@@ -41,15 +41,15 @@
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 #endif /* MIN_VERSION_hasktal */
 
-/* tool gcc-13 */
+/* tool gcc-11 */
 #ifndef TOOL_VERSION_gcc
-#define TOOL_VERSION_gcc "13"
+#define TOOL_VERSION_gcc "11"
 #endif /* TOOL_VERSION_gcc */
 #ifndef MIN_TOOL_VERSION_gcc
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
-  (major1) <  13 || \
-  (major1) == 13 && (major2) <  0 || \
-  (major1) == 13 && (major2) == 0 && (minor) <= 0)
+  (major1) <  11 || \
+  (major1) == 11 && (major2) <  0 || \
+  (major1) == 11 && (major2) == 0 && (minor) <= 0)
 #endif /* MIN_TOOL_VERSION_gcc */
 /* tool ghc-9.6.6 */
 #ifndef TOOL_VERSION_ghc
@@ -101,16 +101,6 @@
   (major1) == 0 && (major2) <  68 || \
   (major1) == 0 && (major2) == 68 && (minor) <= 9)
 #endif /* MIN_TOOL_VERSION_hsc2hs */
-/* tool pkg-config-1.8.1 */
-#ifndef TOOL_VERSION_pkg_config
-#define TOOL_VERSION_pkg_config "1.8.1"
-#endif /* TOOL_VERSION_pkg_config */
-#ifndef MIN_TOOL_VERSION_pkg_config
-#define MIN_TOOL_VERSION_pkg_config(major1,major2,minor) (\
-  (major1) <  1 || \
-  (major1) == 1 && (major2) <  8 || \
-  (major1) == 1 && (major2) == 8 && (minor) <= 1)
-#endif /* MIN_TOOL_VERSION_pkg_config */
 /* tool runghc-9.6.6 */
 #ifndef TOOL_VERSION_runghc
 #define TOOL_VERSION_runghc "9.6.6"
@@ -121,15 +111,15 @@
   (major1) == 9 && (major2) <  6 || \
   (major1) == 9 && (major2) == 6 && (minor) <= 6)
 #endif /* MIN_TOOL_VERSION_runghc */
-/* tool strip-2.42 */
+/* tool strip-2.38 */
 #ifndef TOOL_VERSION_strip
-#define TOOL_VERSION_strip "2.42"
+#define TOOL_VERSION_strip "2.38"
 #endif /* TOOL_VERSION_strip */
 #ifndef MIN_TOOL_VERSION_strip
 #define MIN_TOOL_VERSION_strip(major1,major2,minor) (\
   (major1) <  2 || \
-  (major1) == 2 && (major2) <  42 || \
-  (major1) == 2 && (major2) == 42 && (minor) <= 0)
+  (major1) == 2 && (major2) <  38 || \
+  (major1) == 2 && (major2) == 38 && (minor) <= 0)
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID

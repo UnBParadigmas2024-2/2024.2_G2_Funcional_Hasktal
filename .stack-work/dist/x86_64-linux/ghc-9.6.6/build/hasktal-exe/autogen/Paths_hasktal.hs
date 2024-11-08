@@ -46,12 +46,12 @@ getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: 
 
 
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
-bindir     = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/bin"
-libdir     = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/lib/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0-FHzJBRqNp6YFwlXw23Hb1l-hasktal-exe"
-dynlibdir  = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/lib/x86_64-linux-ghc-9.6.6"
-datadir    = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/share/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0"
-libexecdir = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/libexec/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0"
-sysconfdir = "/home/lucas/\193rea de trabalho/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/60ac463da32fe975176c18f8fb204375519e35b4a0b2f948527cfe598e8a4568/9.6.6/etc"
+bindir     = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/bin"
+libdir     = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/lib/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0-FHzJBRqNp6YFwlXw23Hb1l-hasktal-exe"
+dynlibdir  = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/lib/x86_64-linux-ghc-9.6.6"
+datadir    = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/share/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0"
+libexecdir = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/libexec/x86_64-linux-ghc-9.6.6/hasktal-0.1.0.0"
+sysconfdir = "/home/marcos/faculdade/Paradigmas/2024.2_G2_Funcional_Hasktal/.stack-work/install/x86_64-linux/e1eaa6925ee4e39dab3dddeff1c6ddb7d2be263573fbabc87015a64a812139ff/9.6.6/etc"
 
 getBinDir     = catchIO (getEnv "hasktal_bindir")     (\_ -> return bindir)
 getLibDir     = catchIO (getEnv "hasktal_libdir")     (\_ -> return libdir)
