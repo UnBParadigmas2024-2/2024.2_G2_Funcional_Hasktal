@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Koch
+      Mandelbrot
       Sierpinski
   other-modules:
       Paths_hasktal
