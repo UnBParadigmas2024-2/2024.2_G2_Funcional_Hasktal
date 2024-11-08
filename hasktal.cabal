@@ -25,7 +25,9 @@ source-repository head
 
 library
   exposed-modules:
+      Julia
       Koch
+      Mandelbrot
       Sierpinski
   other-modules:
       Paths_hasktal
