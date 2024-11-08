@@ -14,14 +14,14 @@ mandelbrot maxIter (cx, cy) = length . takeWhile (\(x, y) -> x*x + y*y <= 4) . t
 -- Função para desenhar o conjunto de Mandelbrot
 drawMandelbrot :: GameState -> Picture
 drawMandelbrot maxIter = Pictures
-    [ Translate (0) (-250) $ Scale 1.25 1.25 $ Pictures [translate x y $ drawPoint (mandelbrot maxIter (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
+    [ Translate (-300) (-400) $ Scale 4.0 4.0 $ Pictures [translate x y $ drawPoint (mandelbrot maxIter (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
     , Translate (-50) 275 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show maxIter)
     , Translate (-350) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
   where
-    sx x = x / 125 - 2  -- Ajuste para coordenada x
-    sy y = y / 125 - 2  -- Ajuste para coordenada y
+    sx x = x / 50 - 2  -- Ajuste para coordenada x
+    sy y = y / 50 - 2  -- Ajuste para coordenada y
 
 -- Função para desenhar um ponto do Mandelbrot de acordo com a quantidade de iterações
 drawPoint :: Int -> Picture
