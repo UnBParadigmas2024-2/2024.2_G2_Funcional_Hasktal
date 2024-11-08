@@ -6,23 +6,23 @@ import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), 
 type GameState = Int
 
 drawTrunk :: Color -> Picture
-drawTrunk color = Color color (Polygon [(30,0), (15,300), (-15,300), (-30,0)])
+drawTrunk treeColor = Color treeColor (Polygon [(30,0), (15,300), (-15,300), (-30,0)])
 
 generateTree :: Int -> Color -> Picture
-generateTree 0 color = drawTrunk color
-generateTree n color = Pictures [drawTrunk color,
+generateTree 0 treeColor = drawTrunk treeColor
+generateTree n treeColor = Pictures [drawTrunk treeColor,
                                  Translate 0 300 smallerTree,
                                  Translate 0 240 (Rotate   20  smallerTree),
                                  Translate 0 180 (Rotate (-20) smallerTree),
                                  Translate 0 120 (Rotate   40  smallerTree),
                                  Translate 0  60 (Rotate (-40) smallerTree) ]
-    where smallerTree = Scale 0.5 0.5 (generateTree (n-1) (increaseGreen color))
+    where smallerTree = Scale 0.5 0.5 (generateTree (n-1) (increaseGreen treeColor))
 
 brown :: Color
 brown = makeColor (139 / 255) (100 / 255) (35 / 255) 1
 
 increaseGreen :: Color -> Color
-increaseGreen color = mixColors 1.0 0.1 color green
+increaseGreen treeColor = mixColors 1.0 0.1 treeColor green
 
 drawTree :: GameState -> Picture
 drawTree gameState = Pictures 
