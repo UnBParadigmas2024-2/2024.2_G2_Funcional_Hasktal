@@ -27,8 +27,8 @@ library
   exposed-modules:
       Koch
       Mandelbrot
+      PythagorasTree
       Sierpinski
-      Tree
   other-modules:
       Paths_hasktal
   autogen-modules:

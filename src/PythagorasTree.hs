@@ -1,4 +1,4 @@
-module Tree (drawTree, handleEvent, updateState) where
+module PythagorasTree (drawPythagorasTree, handleEvent, updateState) where
 
 import Graphics.Gloss
 import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..), MouseButton(..))
@@ -24,8 +24,8 @@ brown = makeColor (139 / 255) (100 / 255) (35 / 255) 1
 increaseGreen :: Color -> Color
 increaseGreen treeColor = mixColors 1.0 0.1 treeColor green
 
-drawTree :: GameState -> Picture
-drawTree gameState = Pictures 
+drawPythagorasTree :: GameState -> Picture
+drawPythagorasTree gameState = Pictures 
     [Translate 0 (-300) (generateTree gameState brown)
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
     , Translate (-350) 200 $ button (-1)
