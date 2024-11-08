@@ -5,8 +5,8 @@ import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), 
 import Sierpinski (drawSierpinski)
 import Koch (drawKoch)
 import Julia (drawJulia)
-
-data GameState = StartScreen | SierpinskiScreen Int | KochScreen Int | JuliaScreen Int
+import Mandelbrot(drawMandelbrot)
+data GameState = StartScreen | SierpinskiScreen Int | KochScreen Int | JuliaScreen Int | MandelbrotScreen Int
 
 main :: IO ()
 main = play 
@@ -25,6 +25,7 @@ drawState StartScreen = Pictures
     , Translate (-50) (-50) $ Scale 0.2 0.2 $ Text "Sierpinski"
     , Translate (-50) (-100) $ Scale 0.2 0.2 $ Text "Koch"
     , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Julia"
+    , Translate (-50) (-200) $ Scale 0.2 0.2 $ Text "Mandelbrot"
     ]
 
 -- Desenha o botão de voltar na tela de cada fractal
@@ -43,6 +44,11 @@ drawState (JuliaScreen iterations) =
         [ Translate (-350) 350 $ Scale 0.2 0.2 $ Text "Voltar"
         , drawJulia iterations
         ]
+drawState (MandelbrotScreen iterations) = 
+    Pictures
+        [ Translate (-350) 325 $ Scale 0.2 0.2 $ Text "Voltar"
+        , drawMandelbrot iterations
+        ]
 
 -- Checa se cada botão do menu inicial foi pressionado
 handleMainEvent :: Event -> GameState -> GameState
@@ -50,6 +56,7 @@ handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) StartScreen
     | x >= (-50) && x <= 150 && y >= (-50) && y <= 0 = SierpinskiScreen 0
     | x >= (-50) && x <= 150 && y >= (-100) && y <= (-50) = KochScreen 0
     | x >= (-50) && x <= 150 && y >= (-150) && y <= (-100) = JuliaScreen 0
+    | x >= (-50) && x <= 150 && y >= (-200) && y <= (-150) = MandelbrotScreen 0
 
 -- Para cada tela de fractal, verifica que os botões de
 -- aumentar iteração, diminuir iteração ou voltar foram apertados    
@@ -65,6 +72,10 @@ handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (JuliaScreen i
     | x >= (-350) && x <= (-150) && y >= 350 && y <= 400 = StartScreen
     | x >= -375 && x <= -325 && y >= 175 && y <= 225 = JuliaScreen (max 0 (iterations - 1))
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = JuliaScreen (iterations + 1)
+handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (MandelbrotScreen iterations)
+    | x >= (-325) && x <= (-150) && y >= 325 && y <= 400 = StartScreen
+    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = MandelbrotScreen (max 0 (iterations - 1))
+    | x >= 275 && x <= 325 && y >= 175 && y <= 225 = MandelbrotScreen (iterations + 1)
 
 handleMainEvent _ state = state
 
