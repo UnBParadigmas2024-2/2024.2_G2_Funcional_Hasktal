@@ -1,0 +1,20 @@
+/home/bruno/.ghcup/ghc/9.6.6/lib/ghc-9.6.6/lib/x86_64-linux-ghc-9.6.6/rts-1.0.2/include/ghcversion.h:
+  hash: 9032f6afc97dcddfe8c8b306639eb6f456e3f6667f3dd8268681f51bb77c8634
+? /home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/.stack-work/dist/x86_64-linux/ghc-9.6.6/build/autogen/Paths_hasktal.hs
+: hash: 9655b2aa42b4da88945d413d32a7547a020edb16f18860853047cca1956bf0d2
+? /home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/.stack-work/dist/x86_64-linux/ghc-9.6.6/build/autogen/cabal_macros.h
+: hash: 1baf445f4104efa54d1f96b50ed3fcd9fe0e0e55a9820d75f895473149fb86d4
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/CHANGELOG.md:
+  hash: 081d3caccbd69b9ac5b3b73824bc57923e9cab2d2d8777c8c888c6803f211789
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/README.md:
+  hash: 8a413b14bc24350719f00a725c5e53c0406fef70273fad6f7818d0685b8e917b
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/hasktal.cabal:
+  hash: 5e313287451d32949c29e2874e3d342dbf1d433509460ac2e18cd9c125f1c1d0
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/package.yaml:
+  hash: 5322705708ccb1f711362098bfda34487cfa4c3f2c0dc8f4b9647ce2410f508c
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/src/Koch.hs:
+  hash: 7a067c2f38655907f1c8a999b26966dd52fa86a0ad50a4a3e5522c4c3e9ff8d5
+/home/bruno/Documents/paradigmas/projects/2024.2_G2_Funcional_Hasktal/src/Sierpinski.hs:
+  hash: 0613986377c2a6db83a56681fa54ae50fded961419bd2cf96eb34743391611c6
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
