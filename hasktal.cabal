@@ -29,6 +29,7 @@ library
       Mandelbrot
       PythagorasTree
       Sierpinski
+      SierpinskiCarpet
   other-modules:
       Paths_hasktal
   autogen-modules:
