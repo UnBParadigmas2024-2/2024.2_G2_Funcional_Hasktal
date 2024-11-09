@@ -30,7 +30,7 @@ drawState StartScreen = Pictures
     , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Mandelbrot"
     , Translate (-50) (-200) $ Scale 0.2 0.2 $ Text "SierpinskiCarpet"
     , Translate (-50) (-250) $ Scale 0.2 0.2 $ Text "Pythagoras Tree"
-    , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Julia"
+    , Translate (-50) (-300) $ Scale 0.2 0.2 $ Text "Julia"
     ]
 
 -- Desenha o botão de voltar na tela de cada fractal
