@@ -3,7 +3,6 @@ module SierpinskiCarpet (drawSierpinskiCarpet, handleEvent, updateState) where
 import Graphics.Gloss
 import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..), MouseButton(..))
 
-
 type MyPoint = (Float, Float)
 type Square = (MyPoint, Float)  -- Representa um quadrado como ponto superior esquerdo e tamanho
 type GameState = Int
@@ -23,12 +22,12 @@ sierpinskiCarpet n (p, size) =
 movePoint :: MyPoint -> MyPoint -> MyPoint
 movePoint (x, y) (dx, dy) = (x + dx, y + dy)
 
--- Função para desenhar um quadrado, com cores diferentes por profundidade
 drawSquare :: Int -> Square -> Picture
 drawSquare depth ((x, y), size) =
-    let sqColor = if depth == 0
-                  then makeColor 0 0 0 1
-                  else makeColor (fromIntegral depth / 7) (1 - fromIntegral depth / 7) 0.7 1
+    let r = min 1 (fromIntegral depth * 0.1)
+        g = 1 - min 1 (fromIntegral depth * 0.1)
+        b = 0.2
+        sqColor = makeColor r g b 1
     in Color sqColor (translate x y (rectangleSolid size size))
 
 drawSierpinskiCarpet :: GameState -> Picture
