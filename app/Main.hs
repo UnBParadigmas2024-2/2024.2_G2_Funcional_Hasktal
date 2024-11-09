@@ -27,7 +27,7 @@ drawState StartScreen = Pictures
     , Translate (-50) (-50) $ Scale 0.2 0.2 $ Text "Sierpinski"
     , Translate (-50) (-100) $ Scale 0.2 0.2 $ Text "Koch"
     , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Mandelbrot"
-    , Translate (-50) (-250) $ Scale 0.2 0.2 $ Text "SierpinskiCarpet"
+    , Translate (-50) (-200) $ Scale 0.2 0.2 $ Text "Sierpinski Carpet"
     ]
 
 -- Desenha o botão de voltar na tela de cada fractal
@@ -62,7 +62,7 @@ handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) StartScreen
     | x >= (-50) && x <= 150 && y >= (-50) && y <= 0 = SierpinskiScreen 0
     | x >= (-50) && x <= 150 && y >= (-100) && y <= (-50) = KochScreen 0
     | x >= (-50) && x <= 150 && y >= (-150) && y <= (-100) = MandelbrotScreen 0
-    | x >= (-50) && x <= 150 && y >= (-250) && y <=  (-200) = SierpinskiCarpetScreen 0
+    | x >= (-50) && x <= 150 && y >= (-200) && y <=  (-150) = SierpinskiCarpetScreen 0
 
 -- Para cada tela de fractal, verifica que os botões de
 -- aumentar iteração, diminuir iteração ou voltar foram apertados    
