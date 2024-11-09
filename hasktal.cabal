@@ -28,6 +28,7 @@ library
       Koch
       Mandelbrot
       Sierpinski
+      SierpinskiCarpet
   other-modules:
       Paths_hasktal
   autogen-modules:
