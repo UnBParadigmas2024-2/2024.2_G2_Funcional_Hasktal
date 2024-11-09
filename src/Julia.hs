@@ -15,7 +15,7 @@ julia maxIter (cx, cy) (x0, y0) = length . takeWhile (\(x, y) -> x*x + y*y <= 10
 -- Função para desenhar o conjunto de Mandelbrot
 drawJulia :: GameState -> Picture
 drawJulia maxIter = Pictures
-    [ Translate (-200) (-400) $ Scale 4.0 4.0 $ Pictures [translate x y $ drawPoint (julia maxIter c (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
+    [ Translate (-200) (-400) $ Scale 2.5 2.5 $ Pictures [translate x y $ drawPoint (julia maxIter c (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show maxIter)
     , Translate (-350) 200 $ button (-1)
     , Translate 300 200 $ button 1
