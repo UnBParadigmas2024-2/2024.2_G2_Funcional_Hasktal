@@ -7,8 +7,9 @@ import Koch (drawKoch)
 import Mandelbrot(drawMandelbrot)
 import SierpinskiCarpet (drawSierpinskiCarpet)
 import PythagorasTree (drawPythagorasTree)
+import Julia (drawJulia)
 
-data GameState = StartScreen | SierpinskiScreen Int | KochScreen Int | PythagorasTreeScreen Int | MandelbrotScreen Int | SierpinskiCarpetScreen Int
+data GameState = StartScreen | SierpinskiScreen Int | KochScreen Int | PythagorasTreeScreen Int | MandelbrotScreen Int | SierpinskiCarpetScreen Int | JuliaScreen Int 
 
 main :: IO ()
 main = play 
@@ -29,6 +30,7 @@ drawState StartScreen = Pictures
     , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Mandelbrot"
     , Translate (-50) (-200) $ Scale 0.2 0.2 $ Text "SierpinskiCarpet"
     , Translate (-50) (-250) $ Scale 0.2 0.2 $ Text "Pythagoras Tree"
+    , Translate (-50) (-150) $ Scale 0.2 0.2 $ Text "Julia"
     ]
 
 -- Desenha o botão de voltar na tela de cada fractal
@@ -61,6 +63,11 @@ drawState (PythagorasTreeScreen iterations) =
         [ Translate (-350) 350 $ Scale 0.2 0.2 $ Text "Voltar"
         , drawPythagorasTree iterations
         ]
+drawState (JuliaScreen iterations) = 
+    Pictures
+        [ Translate (-350) 350 $ Scale 0.2 0.2 $ Text "Voltar"
+        , drawJulia iterations
+        ]
 
 -- Checa se cada botão do menu inicial foi pressionado
 handleMainEvent :: Event -> GameState -> GameState
@@ -70,6 +77,7 @@ handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) StartScreen
     | x >= (-50) && x <= 150 && y >= (-150) && y <= (-100) = MandelbrotScreen 0
     | x >= (-50) && x <= 150 && y >= (-200) && y <=  (-150) = SierpinskiCarpetScreen 0
     | x >= (-50) && x <= 150 && y >= (-250) && y <= (-200) = PythagorasTreeScreen 0
+    | x >= (-50) && x <= 150 && y >= (-300) && y <= (-250) = JuliaScreen 0
 
 -- Para cada tela de fractal, verifica que os botões de
 -- aumentar iteração, diminuir iteração ou voltar foram apertados    
@@ -97,6 +105,10 @@ handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (PythagorasTre
     | x >= (-350) && x <= (-150) && y >= 350 && y <= 400 = StartScreen
     | x >= -375 && x <= -325 && y >= 175 && y <= 225 = PythagorasTreeScreen (max 0 (iterations - 1))
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = PythagorasTreeScreen (iterations + 1)
+handleMainEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) (JuliaScreen iterations)
+    | x >= (-350) && x <= (-150) && y >= 350 && y <= 400 = StartScreen
+    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = JuliaScreen (max 0 (iterations - 1))
+    | x >= 275 && x <= 325 && y >= 175 && y <= 225 = JuliaScreen (iterations + 1)
 -- Qualquer outro evento não altera o estado atual.
 handleMainEvent _ state = state
 

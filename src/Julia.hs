@@ -1,4 +1,4 @@
-module Mandelbrot (mandelbrot, drawMandelbrot, button, handleEvent, updateState) where
+module Julia (julia, drawJulia, button, handleEvent, updateState) where
 
 import Graphics.Gloss
 import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), KeyState(..))
@@ -6,20 +6,22 @@ import Graphics.Gloss.Interface.Pure.Game (Event(..), Key(..), MouseButton(..), 
 type GameState = Int
 
 -- Função para calcular o número de iterações antes de divergir
-mandelbrot :: Int -> (Float, Float) -> Int
-mandelbrot maxIter (cx, cy) = length . takeWhile (\(x, y) -> x*x + y*y <= 4) . take maxIter $ iterate f (0, 0)
+julia :: Int -> (Float, Float) -> (Float, Float) -> Int
+julia maxIter (cx, cy) (x0, y0) = length . takeWhile (\(x, y) -> x*x + y*y <= 10) . take maxIter $ iterate f (x0, y0)
   where
     f (x, y) = (x*x - y*y + cx, 2*x*y + cy)
 
+
 -- Função para desenhar o conjunto de Mandelbrot
-drawMandelbrot :: GameState -> Picture
-drawMandelbrot maxIter = Pictures
-    [ Translate (-200) (-400) $ Scale 2.5 2.5 $ Pictures [translate x y $ drawPoint (mandelbrot maxIter (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
-    , Translate (-50) 275 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show maxIter)
+drawJulia :: GameState -> Picture
+drawJulia maxIter = Pictures
+    [ Translate (-200) (-400) $ Scale 2.5 2.5 $ Pictures [translate x y $ drawPoint (julia maxIter c (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
+    , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show maxIter)
     , Translate (-350) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
   where
+    c = (0.32, 0.043)
     sx x = x / 50 - 2  -- Ajuste para coordenada x
     sy y = y / 50 - 2  -- Ajuste para coordenada y
 
@@ -31,7 +33,7 @@ drawPoint iter
 
 button :: Int -> Picture
 button sign = Pictures
-    [ Color black $ rectangleSolid 55 55
+    [ Color black $ rectangleSolid 50 50
     , Color white $ Translate (-10) (-10) $ Scale 0.2 0.2 $ Text (if sign == 1 then "+" else "-")
     ]
 
