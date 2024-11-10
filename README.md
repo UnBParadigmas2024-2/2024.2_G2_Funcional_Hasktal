@@ -39,12 +39,20 @@ para os quais a sequência gerada pela fórmula iterativa:
 </div>
 
 Algoritmicamente, o fractal de Mandelbrot é gerado ao iterar uma fórmula para cada ponto de uma grade de pixels, normalmente representada no plano complexo Cada ponto é tratado como um número complexo sendo sobre eles aplicado a fórmula anterior repetidamente para verificar se 
-z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 2** vamos visualizar como fica a imagem deste fractal:
+z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 2** vamos visualizar como fica a imagem deste fractal em seu momento inicial, posteriormente, na **imagem 3**, vamos demonstrar após dadas iterações:
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="imgs/mandlbrotInicial.png" width="300" />
+    <figcaption><strong>Imagem 2</strong>: Fractal de Mandelbrot, sem nenhuma iteração</figcaption>
+  </figure>
+</div>
+
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/mandelbrot.png" width="300" />
-    <figcaption><strong>Imagem 2</strong>: Fractal de Mandelbrot</figcaption>
+    <figcaption><strong>Imagem 3</strong>: Fractal de Mandelbrot, após algumas iterações</figcaption>
   </figure>
 </div>
 
@@ -71,6 +79,10 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 #### Triângulo de Sierpinski:
 
 #### Tapete de Sierpinsk:
+
+#### Fractal Árvore
+
+#### Curva do Dragão
 
 
 ## Screenshots
