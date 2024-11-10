@@ -24,9 +24,8 @@ drawHeighwayDragon :: GameState -> Picture
 drawHeighwayDragon gameState = Pictures 
     [       Translate offsetX offsetY $ Scale scaleFactor scaleFactor $ Pictures
         [ Color (getColor i) (Line [path !! i, path !! (i + 1)]) | i <- [0..(length path - 2)]]
-    ,      Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
-    , 
-      Translate (-300) 200 $ button (-1)
+    , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
+    , Translate (-300) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
   where
@@ -38,9 +37,8 @@ drawHeighwayDragon gameState = Pictures
 
     getColor :: Int -> Color
     getColor i
-      | i < length path `div` 2 = red  -- Vermelha para a primeira metade
-      | otherwise = blue  -- Azul para a segunda metade
- 
+      | i < length path `div` 2 = red 
+      | otherwise = blue  
 
 button :: Int -> Picture
 button sign = Pictures 
