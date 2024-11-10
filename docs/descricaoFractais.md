@@ -3,7 +3,10 @@
 
 ## Introdução
 
-_definição de fractal, etc..._
+Fractais são estruturas geométricas caracterizadas por padrões que se repetem em diferentes escalas, suas partes se assemelham ao todo quando observadas em diferentes níveis de ampliação. Este conceito foi formalizado pelo matemático Benoit Mandelbrot em 1970, embora estruturas fractais já fossem conhecidas na matemática desde o século XX, feitas por Helge von Koch, Gaston Julia, Pierre Fatou e outros.
+
+Os fractais são produzidos por processos iterativos, onde uma fórmula matemática simples é repetida várias vezes, gerando uma estrutura complexa, mantêndo suas características principais em diferentes escalas, de acordo com Eduardo Colli, professor do Instituto de Matemática e Estatística da USP, os fractais possuem uma estrutura composta por réplicas de si mesmos em diferentes escalas; cada parte contém cópias menores, que também replicam o padrão em escalas sucessivas.
+
 
 ## Metodologia
 
@@ -185,3 +188,5 @@ _descrição, etc..._
 ## Fontes
 1. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
 2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.
+3. Matemateca IME USP. FRACTAIS. Disponível em: <https://matemateca.ime.usp.br/acervo/fractais.html>. Acesso em: 08 de Novembro de 2024.
+4. Fractais. Fractais. Disponível em: <https://www.aedi.ufpa.br/bom/images/pdf/Fractais.pdf>. Acesso em: 08 de Novembro de 2024.
