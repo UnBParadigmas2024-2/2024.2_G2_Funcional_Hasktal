@@ -16,12 +16,20 @@ _trabalho em grupo de 10 pessoas, divisão em duplas, etc..._
 
 ### Conjunto de Julia:
 
-_descrição, etc..._
+Os fractais de Julia são conjuntos de pontos no plano complexo que ilustram o comportamento iterativo de funções quadráticas complexas. Para gerar um fractal de Julia, seleciona-se um número complexo constante $c$ e, para cada ponto $z$ no plano complexo, aplica-se repetidamente a função $f(z)=z^2+c$, de maneira muito similar ao fractal de Mandelbrot. Se a sequência de iterações permanece limitada (não tende ao infinito), o ponto $z$ pertence ao conjunto de Julia associado a $c$; caso contrário, não pertence. A fronteira entre os pontos limitados e os que divergem cria padrões infinitamente complexos e auto-semelhantes, típicos dos fractais de Julia. Esses padrões visualizam como sistemas dinâmicos simples podem gerar complexidade extrema.
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="../imgs/julia0.png" width="300" />
+    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com c = (0.32, 0.043) em 0 interações</figcaption>
+  </figure>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
+</div>
+
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/xxx.png" width="300" />
-    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com ??? interações</figcaption>
+    <img src="../imgs/julia18.png" width="300" />
+    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com c = (0.32, 0.043) em 18 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
 </div>
