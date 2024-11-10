@@ -1,5 +1,6 @@
 # Hasktal
 
+
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 **Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: 02<br>
 **Paradigma**: Funcional<br>
@@ -20,6 +21,7 @@
 
 
 ## Sobre 
+
 O projeto visa representar visualmente uma variedade de fractais gerados a partir de padrões repetitivos. Utilizando Haskell, serão desenvolvidos processos iterativos para criar diferentes tipos de fractais, explorando suas propriedades geométricas e características únicas derivadas de funções matemáticas específicas. Os fractais desenvolvidos foram:
 
 #### Conjunto de Julia:
@@ -80,35 +82,22 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 
 #### Tapete de Sierpinsk:
 
-#### Fractal Árvore
-
-#### Curva do Dragão
-
 
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
 **Linguagens**: Haskell<br>
-**Tecnologias**: Stack<br>
+**Tecnologias**: Gloss<br>
 
-1. Instale o `stack`,  o tutorial de instalação pode ser encontrado [aqui](https://docs.haskellstack.org/en/stable/install_and_upgrade/).
-2. Clone o repositório 
-    ```bash
-    git clone https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal.git
-    ```
-3. No terminal, abra o diretório onde o arquivo `hasktal.cabal` esta localizado e execute:
+Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Insira um manual ou um script para auxiliar ainda mais.
+Gifs animados e outras ilustrações são bem-vindos!
 
-    ```bash
-    stack build
-    stack exec hasktal-exe
-    ```
-
-## Uso
-
-Ao iniciar o projeto, uma janela será exibida com uma lista dos fractais desenvolvidos pela equipe. O usuário pode selecionar o fractal desejado para visualização, e a estrutura inicial da forma (sem iteração) será apresentada. 
-
-A partir dessa tela, é possível aumentar as iterações clicando no botão com o símbolo de mais (+), gerando progressivamente a imagem do fractal. O usuário também pode reduzir o número de iterações utilizando o botão com o símbolo de menos (-). Para retornar ao menu inicial e selecionar outro fractal, basta clicar no botão "Voltar".
+## Uso 
+Explique como usar seu projeto.
+Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
+Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
