@@ -3,7 +3,10 @@
 
 ## Introdução
 
-_definição de fractal, etc..._
+Fractais são estruturas geométricas caracterizadas por padrões que se repetem em diferentes escalas, suas partes se assemelham ao todo quando observadas em diferentes níveis de ampliação. Este conceito foi formalizado pelo matemático Benoit Mandelbrot em 1970, embora estruturas fractais já fossem conhecidas na matemática desde o século XX, feitas por Helge von Koch, Gaston Julia, Pierre Fatou e outros.
+
+Os fractais são produzidos por processos iterativos, onde uma fórmula matemática simples é repetida várias vezes, gerando uma estrutura complexa, mantêndo suas características principais em diferentes escalas, de acordo com Eduardo Colli, professor do Instituto de Matemática e Estatística da USP, os fractais possuem uma estrutura composta por réplicas de si mesmos em diferentes escalas; cada parte contém cópias menores, que também replicam o padrão em escalas sucessivas.
+
 
 ## Metodologia
 
@@ -25,12 +28,20 @@ _descrição, etc..._
 
 ### Curva de Dragão:
 
-_descrição, etc..._
+A Curva de Dragão, também conhecida como Heighway Dragon, é um fractal gerado por um processo iterativo simples, mas que resulta em uma figura complexa e auto-similar. O fractal foi nomeado em homenagem aos matemáticos John Heighway, Bruce Banks e William Harter, que o descreveram pela primeira vez em 1960.
+
+O processo de geração da Curva de Dragão começa com uma linha reta. A cada iteração, a linha é "dobrada" de forma que cria um padrão em zigue-zague. A cada iteração, a curva vai adquirindo uma forma que lembra a silhueta de um dragão (daí o nome), com a característica de se tornar cada vez mais detalhada à medida que mais iterações são aplicadas.
+
+1. Inicie com uma linha reta. 
+2. Dobre a linha em 90 graus para a esquerda (ou direita, dependendo da direção).
+3. Repita o processo para cada segmento gerado.
+
+Esse processo é repetido recursivamente em cada segmento, e cada nova iteração adiciona mais complexidade à figura. A Curva de Dragão tem a característica de ser uma curva contínua, mas não diferenciável, e a cada iteração, ela se aproxima de uma forma que parece um dragão, como uma linha que se dobra sobre si mesma.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/xxx.png" width="300" />
-    <figcaption><br><strong>Imagem 2</strong>: Curva de Dragão com ??? interações</figcaption>
+    <img src="../imgs/HeighwayDragon.png" width="400" />
+    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Dragão (Heighway Dragon)</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
 </div>
@@ -177,3 +188,6 @@ _descrição, etc..._
 ## Fontes
 1. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
 2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.
+3. Matemateca IME USP. FRACTAIS. Disponível em: <https://matemateca.ime.usp.br/acervo/fractais.html>. Acesso em: 08 de Novembro de 2024.
+4. Fractais. Fractais. Disponível em: <https://www.aedi.ufpa.br/bom/images/pdf/Fractais.pdf>. Acesso em: 08 de Novembro de 2024.
+5. Urich, Rohan. The Dragon Curve (and a bit on Fractals). Disponível em: <https://rohanurich.wordpress.com/tag/heighway-dragon/>. Acesso em: 09 de Novembro de 2024.
