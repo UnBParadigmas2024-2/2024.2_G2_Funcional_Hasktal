@@ -6,18 +6,18 @@
 **Paradigma**: Funcional<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| 21/1039288  |  Bruno Campos Ribeiro |
-| 21/1039297  |  Bruno Martins Valério Bomfim |
-| 20/2016462  |  Heitor Marques|
-| 21/1029352  |  Igor e Silva Penha |
-| 19/0057858  |  José Luís Ramos Teixeira |
-| 21/1029405  |  Leonardo Gonçalves Machado |
-| 20/2016767  |  Lucas Felipe Soares |
-| 20/0062379  |  Marcos Vinícius de Deus |
-| 20/2045268  |  Raquel T. Eucaria Pereira da Costa |
-| 21/2002907  |  Zenilda Pedrosa Vieira |
+| Matrícula  | Aluno                              |
+| ---------- | ---------------------------------- |
+| 21/1039288 | Bruno Campos Ribeiro               |
+| 21/1039297 | Bruno Martins Valério Bomfim       |
+| 20/2016462 | Heitor Marques                     |
+| 21/1029352 | Igor e Silva Penha                 |
+| 19/0057858 | José Luís Ramos Teixeira           |
+| 21/1029405 | Leonardo Gonçalves Machado         |
+| 20/2016767 | Lucas Felipe Soares                |
+| 20/0062379 | Marcos Vinícius de Deus            |
+| 20/2045268 | Raquel T. Eucaria Pereira da Costa |
+| 21/2002907 | Zenilda Pedrosa Vieira             |
 
 
 ## Sobre 
@@ -38,6 +38,7 @@ A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1
   </figure>
 </div>
 
+<br>
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
@@ -77,7 +78,6 @@ TEMPO: +/- 15min
 Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) | Comprobatórios (ex. links para commits)
 | -- | -- | -- | -- |
-| Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa | Commit tal (com link)
 |  Bruno Campos Ribeiro |
 |  Bruno Martins Valério Bomfim | (1) Estudo individual, pesquisa e testes;<br> (2) Programação, desenvolvimento e aprimoramento do algoritmo de geração do fractal de Koch;<br> (3) Auxílio no desenvolvimento do menu principal;<br> (4) Auxílio na padronização e estruturação da arquitetura do projeto;<br> (5) Apresentação da seção de "interface + fractal de koch" na produção do vídeo;<br> (6) Participação nas reuniões e discussões em equipe, colaborando com ideias e sugestões (via Teams e Telegram) | Excelente |  (1) [Commit 8344c64](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/8344c64c096453b8ca36ea51b2d5f91f1b1a07ed) <br> (2) [Commit 2b075e5](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/2b075e5b59d17c1209d08bdd96993e9ea6134f6b) <br> (3) [Commit 355c7a5](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/355c7a53cb0f3aa824be101154bed7782a7e15a9), [Commit ed33c37](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/ed33c37197b6cb57e6fdbde8a9892c01b49380c7) <br> (4) [Commit ad8ad5f](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/ad8ad5f917fa60c845cc0c9ffe8d644fe8842e7e) <br> (5) [Vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal?tab=readme-ov-file#v%C3%ADdeo) | 
 |  Heitor Marques| Programação do fractal Árvore de Pitágoras, documentação sobre fractal Árvore de Pitágoras e documentação sobre fractais |  Excelente | [Árvore de Pitágoras](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Doc. Árvore de Pitágoras](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/f886a43ffaf30b0c1a3dd396ad0a84d7d84a8819) <br> [Doc. fractais](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/4450cd5b616c1b7c44c20c6fdfad0b7f5c52b1c9)|

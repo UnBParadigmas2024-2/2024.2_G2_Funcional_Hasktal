@@ -22,24 +22,14 @@ Após a escolha do tema fractais, os 10 integrantes do grupo foram separados em 
 
 ### Conjunto de Julia:
 
-Os fractais de Julia são conjuntos de pontos no plano complexo que ilustram o comportamento iterativo de funções quadráticas complexas. Para gerar um fractal de Julia, seleciona-se um número complexo constante $c$ e, para cada ponto $z$ no plano complexo, aplica-se repetidamente a função $f(z)=z^2+c$, de maneira muito similar ao fractal de Mandelbrot. Se a sequência de iterações permanece limitada (não tende ao infinito), o ponto $z$ pertence ao conjunto de Julia associado a $c$; caso contrário, não pertence. A fronteira entre os pontos limitados e os que divergem cria padrões infinitamente complexos e auto-semelhantes, típicos dos fractais de Julia. Esses padrões visualizam como sistemas dinâmicos simples podem gerar complexidade extrema.
+_descrição, etc..._
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/julia0.png" width="300" />
-    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com c = (0.32, 0.043) em 0 interações</figcaption>
+    <img src="../imgs/xxx.png" width="300" />
+    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com ??? interações</figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
-</div>
-
-<br> 
-
-<div align="center">
-  <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/julia18.png" width="300" />
-    <figcaption><br><strong>Imagem 2</strong>: Conjunto de Julia com c = (0.32, 0.043) em 18 interações</figcaption>
-  </figure>
-  <font size="3"><p style="text-align: center"><strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
 </div>
 
 ### Curva de Dragão:
@@ -57,9 +47,9 @@ Esse processo é repetido recursivamente em cada segmento, e cada nova iteraçã
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/HeighwayDragon.png" width="400" />
-    <figcaption><br><strong>Imagem 3</strong>: Fractal Curva de Dragão (Heighway Dragon)</figcaption>
+    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Dragão (Heighway Dragon)</figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
 </div>
 
 ### Curva de Koch:
@@ -71,42 +61,42 @@ A Curva de Koch é um fractal gerado por um algoritmo iterativo, que segue o seg
 3. Substituir o terço médio por um triângulo equilátero sem base de lado igual ao terço do segmento original.
 
 Esse processo é repetido recursivamente para cada segmento gerado, aumentando a complexidade da figura a cada iteração. O algoritmo segue esse ciclo em cada iteração, produzindo uma curva que se torna progressivamente mais detalhada e auto-similar, caracterizando o comportamento fractal da Curva de Koch. 
-Na **Imagem 4**, podemos observar a construção da curva conforme as iterações vão aumentando.
+Na **Imagem 3**, podemos observar a construção da curva conforme as iterações vão aumentando.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/koch.png"/>
-    <figcaption><br><strong>Imagem 4</strong>: Fractal Curva de Koch <font size="3"><p style="text-align: center"><b>Fonte: </b><a href="https://github.com/gitbmvbs">Bruno Martins</a> e <a href="https://github.com/raqueleucaria">Raquel Eucaria</a>, 2024</p></font> </figcaption>
+    <figcaption><br><strong>Imagem 3</strong>: Fractal Curva de Koch <font size="3"><p style="text-align: center"><b>Fonte: </b><a href="https://github.com/gitbmvbs">Bruno Martins</a> e <a href="https://github.com/raqueleucaria">Raquel Eucaria</a>, 2024</p></font> </figcaption>
   </figure>
 </div>
 
 ### Conjunto de Mandelbrot:
 
-O fractal de Mandelbrot é um dos fractais mais famosos e fascinantes. O fractal é definido pelo conjunto de todos os pontos complexos para os quais a sequência gerada pela fórmula iterativa:
+O fractal de Mandelbrot é um dos fractais mais famosos e fascinantes. O fractal é definido pelo conjunto de todos os pontos complexos 
+para os quais a sequência gerada pela fórmula iterativa:
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/formulaMandelbrot.png" width="300" />
-    <figcaption><br><strong>Imagem 5</strong>: Fórmula do conjunto de Mandelbrot <br> <strong>Fonte:</strong> <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 4</strong>: Fórmula do conjunto de Mandelbrot <br> <strong>Fonte:</strong> <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
 Algoritmicamente, o fractal de Mandelbrot é gerado ao iterar uma fórmula para cada ponto de uma grade de pixels, normalmente representada no plano complexo Cada ponto é tratado como um número complexo sendo sobre eles aplicado a fórmula anterior repetidamente para verificar se 
-z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 6** vamos visualizar como fica a imagem deste fractal em seu momento inicial, posteriormente, na **imagem 7**, vamos demonstrar após dadas iterações:
+z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 5** vamos visualizar como fica a imagem deste fractal em seu momento inicial, posteriormente, na **imagem 6**, vamos demonstrar após dadas iterações:
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/mandlbrotInicial.png" width="300" />
-    <figcaption><br><strong>Imagem 6:</strong> Fractal de Mandelbrot, sem nenhuma iteração <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 5:</strong> Fractal de Mandelbrot, sem nenhuma iteração <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
-<br>
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/mandelbrot.png" width="300" />
-    <figcaption><br><strong>Imagem 7:</strong> Fractal de Mandelbrot, após algumas iterações <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 6:</strong> Fractal de Mandelbrot, após algumas iterações <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
@@ -116,19 +106,19 @@ O fractal conhecido como "Árvore de Pitágoras" é um tipo de fractal geométri
 
 O algoritmo desenvolvido da árvore de pitágoras começa com um trapezio que representa o tronco da árvore. A partir dele, cinco trapezios menores são adicionados no topo, formando um ângulo em relação ao trapezio inicial, que simboliza os primeiros "galhos" da árvore. Esse processo é então repetido para cada novo trapezio, com uma rotação e uma escala que mantêm o formato e a proporção dos galhos, criando assim uma estrutura ramificada e cada vez mais complexa.
 
-A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 8** (com duas iterações). Já em um número maior de iterações, como na **Imagem 9** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
+A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 7** (com duas iterações). Já em um número maior de iterações, como na **Imagem 8** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/PythagorasTree2.png" width="300" />
-    <figcaption><br><strong>Imagem 8</strong>: Árvore de Pitágoras com 2 interações</figcaption>
+    <figcaption><br><strong>Imagem 7</strong>: Árvore de Pitágoras com 2 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
 </div>
 <div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/PythagorasTree5.png" width="300" />
-    <figcaption><br><strong>Imagem 9</strong>: Árvore de Pitágoras com 5 interações</figcaption>
+    <figcaption><br><strong>Imagem 8</strong>: Árvore de Pitágoras com 5 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
 </div>
@@ -137,30 +127,29 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 
 A Árvore de Pitágoras é um tipo de fractal inspirado na geometria dos triângulos retângulos e na relação dos quadrados em seus lados. Esse fractal começa com um quadrado, e, a partir dele, outros quadrados menores são adicionados em seus cantos superiores. Cada novo par de quadrados é posicionado em um ângulo que lembra o crescimento de galhos de uma árvore. Esse processo de "ramificação" é repetido diversas vezes, criando uma figura que se assemelha a uma árvore estilizada, com padrões simétricos e repetitivos. A beleza da Árvore de Pitágoras está em como formas simples, repetidas de forma organizada, resultam em uma estrutura complexa e intrigante.
 
-Conforme mostra a **imagem 10**, os triângulos traçados com linhas vermelhas estabelecem uma relação pitagórica entre três quadrados: o quadrado da base possui uma área que é a soma das áreas dos dois quadrados adicionados na próxima etapa. As variações nas árvores resultam apenas da escolha do triângulo utilizado para definir o tamanho e a orientação dos quadrados em cada nível do fractal.
+Conforme mostra a **imagem 8**, os triângulos traçados com linhas vermelhas estabelecem uma relação pitagórica entre três quadrados: o quadrado da base possui uma área que é a soma das áreas dos dois quadrados adicionados na próxima etapa. As variações nas árvores resultam apenas da escolha do triângulo utilizado para definir o tamanho e a orientação dos quadrados em cada nível do fractal.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/fractalTreeTrianguloRetangulo.png" width="300" />
-    <figcaption><br><strong>Imagem 10</strong>: Relação pitagórica entre três quadrados</figcaption>
+    <figcaption><br><strong>Imagem 8</strong>: Relação pitagórica entre três quadrados</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="http://learn.hfm.io/fractals.html">Spirals, Snowflakes & Trees: Recursion in Pictures</a></p></font>
 </div>
 
-
-Nas **imagens 11** e **12** é mostrada a árvore gerada com 5 iterações e depois com 15 iterações.
+Nas **imagens 9** e **10** é mostrada a árvore gerada com 5 iterações e depois com 15 iterações.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/fractalTree6.png" width="300" />
-    <figcaption><br><strong>Imagem 11</strong>: Árvore de Pitágoras de quadrados com 6 interações</figcaption>
+    <figcaption><br><strong>Imagem 9</strong>: Árvore de Pitágoras de quadrados com 6 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a>, 2024</p></font>
 </div>
 <div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/fractalTree15.png" width="300" />
-    <figcaption><br><strong>Imagem 12</strong>: Árvore de Pitágoras de quadrados com 15 interações</figcaption>
+    <figcaption><br><strong>Imagem 10</strong>: Árvore de Pitágoras de quadrados com 15 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a>, 2024</p></font>
 </div>
@@ -187,15 +176,15 @@ O Triângulo de Sierpinski é um fractal e um exemplo de um conjunto auto-simila
 ##### Extra
 Adição da mudança de cor dos triângulos restantes por meio da função makeColor, para que a mudança ocorrece a cada interação foi utilizada a função fromIntegral passando como argumento a profundidadde da interação. Dessa maneira, cada interação irá obter sua própria coloração de triângulos.
 
-A seguir, na **imagem 13**, podemos observar a construção do fractal conforme as iterações vão aumentando.
+A seguir, na **imagem 11**, podemos observar a construção do fractal conforme as iterações vão aumentando.
 
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/interacoes-triangulo.png" width="550" />
-    <figcaption><br><strong>Imagem 13</strong>: Fractal triângulo de Sierpinski</figcaption>
+    <figcaption><br><strong>Imagem 11</strong>: Fractal triângulo de Sierpinski</figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
 </div>
 
 ### Tapete de Sierpinski:
@@ -208,17 +197,16 @@ Em matemática, o conjunto de Cantor é um conjunto de pontos situados em um ún
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/CantorSet.png" width="300" />
-    <figcaption><br><strong>Imagem 14</strong>: Exemplo conjunto de Cantor ternário</figcaption>
+    <figcaption><br><strong>Imagem 12</strong>: Exemplo conjunto de Cantor ternário</figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> </font>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> </a></font>
 </div>
-<br>
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/CantorDust.gif" width="300" />
-    <figcaption><br><strong>Imagem 15</strong>: Exemplo pó de Cantor</figcaption>
+    <figcaption><br><strong>Imagem 13</strong>: Exemplo pó de Cantor</figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> </a></font>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a></font>
 </div>
 
 A construção do tapete Sierpiński começa com um quadrado. O quadrado é cortado em 9 subquadrados congruentes em uma grade 3 por 3, e o subquadrado central é removido. O mesmo procedimento é então aplicado recursivamente aos 8 subquadrados restantes, _ad infinitum_. Pode ser realizado como o conjunto de pontos no quadrado unitário cujas coordenadas escritas na base três não possuem ambos um dígito '1' na mesma posição, usando a representação numérica infinitesimal de 0.1111... = 0.2.
@@ -226,15 +214,14 @@ A construção do tapete Sierpiński começa com um quadrado. O quadrado é cort
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/SierpinskiCarpet1.png" width="300" />
-    <figcaption><br><strong>Imagem 16</strong>: Tapete de Sierpinski com 1 interação</figcaption>
+    <figcaption><br><strong>Imagem 14</strong>: Tapete de Sierpinski com 1 interação</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>
-<br>
 <div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/SierpinskiCarpet7.png" width="300" />
-    <figcaption><br><strong>Imagem 17</strong>: Tapete de Sierpinski com 7 interações</figcaption>
+    <figcaption><br><strong>Imagem 15</strong>: Tapete de Sierpinski com 7 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>
@@ -259,5 +246,4 @@ A construção do tapete Sierpiński começa com um quadrado. O quadrado é cort
 | `1.4`  | 10/11/2024 | Descrição do Triângulo de Sierpinski e da Curva do Dragão                      |     [José Luís](https://github.com/joseluis-rt) <br> [Igor Penha](https://github.com/igorpenhaa)      |
 | `1.5`  | 10/11/2024 | Introdução                                                                     |                            [Heitor Marques](https://github.com/heitormsb)                             |
 | `1.6`  | 10/11/2024 | Documentação Sierpinski Carpet                                                 |                         [Bruno Ribeiro](https://github.com/BrunoRiibeiro.com)                         |
-| `1.7`  | 10/11/2024 | Documentação Conjunto de Julia                                                 |                         [Leonardo Machado](https://github.com/leonardogonmac)                         |
-| `1.8`  | 10/11/2024 | Metodologia e Documentação da Árvore de Pitágoras de quadrados                 |                          [Zenilda Vieira](https://github.com/zenildavieira)                           |
+| `1.7`  | 10/11/2024 | Metodologia e Documentação da Árvore de Pitágoras de quadrados                 |                          [Zenilda Vieira](https://github.com/zenildavieira)                           |
