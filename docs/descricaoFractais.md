@@ -98,7 +98,7 @@ z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 5** vamos 
 
 O fractal conhecido como "Árvore de Pitágoras" é um tipo de fractal geométrico que se assemelha a uma árvore, sendo composto por trapezios dispostos de forma recursiva. Esse fractal tem seu nome em homenagem ao Teorema de Pitágoras, pois a construção de cada "galho" segue a relação desse teorema.
 
-O algoritimo desenvolvido da árvore de pitágoras começa com um trapezio que representa o tronco da árvore. A partir dele, cinco trapezios menores são adicionados no topo, formando um ângulo em relação ao trapezio inicial, que simboliza os primeiros "galhos" da árvore. Esse processo é então repetido para cada novo trapezio, com uma rotação e uma escala que mantêm o formato e a proporção dos galhos, criando assim uma estrutura ramificada e cada vez mais complexa.
+O algoritmo desenvolvido da árvore de pitágoras começa com um trapezio que representa o tronco da árvore. A partir dele, cinco trapezios menores são adicionados no topo, formando um ângulo em relação ao trapezio inicial, que simboliza os primeiros "galhos" da árvore. Esse processo é então repetido para cada novo trapezio, com uma rotação e uma escala que mantêm o formato e a proporção dos galhos, criando assim uma estrutura ramificada e cada vez mais complexa.
 
 A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 7** (com duas iterações). Já em um número maior de iterações, como na **Imagem 8** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
 
@@ -107,8 +107,9 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
     <img src="../imgs/PythagorasTree2.png" width="300" />
     <figcaption><br><strong>Imagem 7</strong>: Árvore de Pitágoras com 2 interações</figcaption>
   </figure>
-<!-- </div>
-<div align="center"> -->
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
+</div>
+<div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/PythagorasTree5.png" width="300" />
     <figcaption><br><strong>Imagem 8</strong>: Árvore de Pitágoras com 5 interações</figcaption>
@@ -118,15 +119,28 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 
 ### Árvore de Pitágoras de quadrados:
 
-_descrição, etc..._
+A Árvore de Pitágoras é um tipo de fractal inspirado na geometria dos triângulos retângulos e na relação dos quadrados em seus lados. Esse fractal começa com um quadrado, e, a partir dele, outros quadrados menores são adicionados em seus cantos superiores. Cada novo par de quadrados é posicionado em um ângulo que lembra o crescimento de galhos de uma árvore. Esse processo de "ramificação" é repetido diversas vezes, criando uma figura que se assemelha a uma árvore estilizada, com padrões simétricos e repetitivos. A beleza da Árvore de Pitágoras está em como formas simples, repetidas de forma organizada, resultam em uma estrutura complexa e intrigante.
+
+Conforme mostra a **imagem 8**, os triângulos traçados com linhas vermelhas estabelecem uma relação pitagórica entre três quadrados: o quadrado da base possui uma área que é a soma das áreas dos dois quadrados adicionados na próxima etapa. As variações nas árvores resultam apenas da escolha do triângulo utilizado para definir o tamanho e a orientação dos quadrados em cada nível do fractal.
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="../imgs/fractalTreeTrianguloRetangulo.png" width="300" />
+    <figcaption><br><strong>Imagem 8</strong>: Relação pitagórica entre três quadrados</figcaption>
+  </figure>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="http://learn.hfm.io/fractals.html">Spirals, Snowflakes & Trees: Recursion in Pictures</a></p></font>
+</div>
+
+Nas **imagens 9** e **10** é mostrada a árvore gerada com 5 iterações e depois com 15 iterações.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/fractalTree6.png" width="300" />
     <figcaption><br><strong>Imagem 9</strong>: Árvore de Pitágoras de quadrados com 6 interações</figcaption>
   </figure>
-<!-- </div>
-<div align="center"> -->
+  <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a>, 2024</p></font>
+</div>
+<div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/fractalTree15.png" width="300" />
     <figcaption><br><strong>Imagem 10</strong>: Árvore de Pitágoras de quadrados com 15 interações</figcaption>
@@ -176,8 +190,9 @@ _descrição, etc..._
     <img src="../imgs/SierpinskiCarpet1.png" width="300" />
     <figcaption><br><strong>Imagem 12</strong>: Tapete de Sierpinski com 1 interações</figcaption>
   </figure>
-<!-- </div>
-<div align="center"> -->
+  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
+</div>
+<div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/SierpinskiCarpet7.png" width="300" />
     <figcaption><br><strong>Imagem 13</strong>: Tapete de Sierpinski com 7 interações</figcaption>
@@ -186,8 +201,22 @@ _descrição, etc..._
 </div>
 
 ## Fontes
-1. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
-2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.
-3. Matemateca IME USP. FRACTAIS. Disponível em: <https://matemateca.ime.usp.br/acervo/fractais.html>. Acesso em: 08 de Novembro de 2024.
-4. Fractais. Fractais. Disponível em: <https://www.aedi.ufpa.br/bom/images/pdf/Fractais.pdf>. Acesso em: 08 de Novembro de 2024.
-5. Urich, Rohan. The Dragon Curve (and a bit on Fractals). Disponível em: <https://rohanurich.wordpress.com/tag/heighway-dragon/>. Acesso em: 09 de Novembro de 2024.
+
+> 1. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
+> 2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.
+> 3. Matemateca IME USP. FRACTAIS. Disponível em: <https://matemateca.ime.usp.br/acervo/fractais.html>. Acesso em: 08 de Novembro de 2024.
+> 4. Fractais. Fractais. Disponível em: <https://www.aedi.ufpa.br/bom/images/pdf/Fractais.pdf>. Acesso em: 08 de Novembro de 2024.
+> 5. Urich, Rohan. The Dragon Curve (and a bit on Fractals). Disponível em: <https://rohanurich.wordpress.com/tag/heighway-dragon/>. Acesso em: 09 de Novembro de 2024.
+> 6. Spirals, Snowflakes & Trees: Recursion in Pictures. Dispónivel em: <http://learn.hfm.io/fractals.html>. Acesso em: 06 de Novembro de 2024.
+
+## Histórico de Versões
+
+|Versão|Data|Descrição|Autor|
+|:----:|----|---------|:-----:|
+|`1.0`|09/11/2024|Documentação da Árvore de Pitágoras|[Heitor Marques](https://github.com/heitormsb) <br> [Marcos Vinícius]("https://github.com/Marcos574)|
+|`1.0`|09/11/2024|Documentação da Mandelbrot|[Lucas Felipe](https://github.com/lucasfs) <br> [Leonardo Machado](https://github.com/leonardogonmac)|
+|`1.2`|10/11/2024|Descrição da Curva de Koch|[Bruno Martins](https://github.com/gitbmvbs) <br> [Raquel Eucaria](https://github.com/raqueleucaria)|
+|`1.1`|10/11/2024|Formatação do documento e inclusão de imagens Fractal Tree e Sierpinski Carpet|[Zenilda Vieira](https://github.com/zenildavieira)|
+|`1.1`|10/11/2024|Descrição do Triângulo de Sierpinski e da Curva do Dragão|[José Luís](https://github.com/joseluis-rt) <br> [Igor Penha](https://github.com/igorpenhaa)|
+|`1.4`|10/11/2024|Introdução|[Heitor Marques](https://github.com/heitormsb)|
+|`1.5`|10/11/2024|||
