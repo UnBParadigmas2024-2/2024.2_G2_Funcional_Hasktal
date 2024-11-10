@@ -261,4 +261,4 @@ infinitesimal de 0.1111... = 0.2.
 |`1.1`|10/11/2024|Descrição do Triângulo de Sierpinski e da Curva do Dragão|[José Luís](https://github.com/joseluis-rt) <br> [Igor Penha](https://github.com/igorpenhaa)|
 |`1.4`|10/11/2024|Introdução|[Heitor Marques](https://github.com/heitormsb)|
 |`1.5`|10/11/2024|Documentação Sierpinski Carpet|[Bruno Ribeiro](https://github.com/BrunoRiibeiro.com)|
-|`1.6`|10/11/2024|Documentação Conjunto de Julia|[Leonardo Machado](https://github.com/leonardogonmac.com)|
+|`1.6`|10/11/2024|Documentação Conjunto de Julia|[Leonardo Machado](https://github.com/leonardogonmac)|
