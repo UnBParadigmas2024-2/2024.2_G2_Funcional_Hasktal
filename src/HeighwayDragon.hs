@@ -27,7 +27,7 @@ drawHeighwayDragon gameState = Pictures
     , -- Exibe o número de iterações
       Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
     , -- Desenha os botões para incrementar e decrementar as iterações
-      Translate (-350) 200 $ button (-1)
+      Translate (-300) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
   where
@@ -54,7 +54,7 @@ button sign = Pictures
 
 handleEvent :: Event -> GameState -> GameState
 handleEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) gameState
-    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = max 0 (gameState - 1)
+    | x >= -325 && x <= -275 && y >= 175 && y <= 225 = max 0 (gameState - 1)
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = gameState + 1 
 handleEvent _ gameState = gameState
 

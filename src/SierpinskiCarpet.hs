@@ -32,9 +32,9 @@ drawSquare depth ((x, y), size) =
 
 drawSierpinskiCarpet :: GameState -> Picture
 drawSierpinskiCarpet gameState = Pictures 
-    [ Pictures (map (drawSquare gameState) (sierpinskiCarpet gameState ((0, 0), 400)))  -- Desenha o tapete com o quadrado inicial
+    [ Pictures (map (drawSquare gameState) (sierpinskiCarpet gameState ((0, -100), 450)))  -- Desenha o tapete com o quadrado inicial
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)           -- Exibe o número de iterações
-    , Translate (-350) 200 $ button (-1)                                                      -- Botão de decremento
+    , Translate (-300) 200 $ button (-1)                                                      -- Botão de decremento
     , Translate 300 200 $ button 1                                                            -- Botão de incremento
     ]
 
@@ -48,7 +48,7 @@ button sign = Pictures
 -- Manipula os eventos do mouse para aumentar/diminuir o número de iterações
 handleEvent :: Event -> GameState -> GameState
 handleEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) gameState
-    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = max 0 (gameState - 1)
+    | x >= -325 && x <= -275 && y >= 175 && y <= 225 = max 0 (gameState - 1)
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = gameState + 1
 handleEvent _ gameState = gameState
 

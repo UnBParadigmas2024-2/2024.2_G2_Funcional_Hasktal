@@ -17,7 +17,7 @@ drawJulia :: GameState -> Picture
 drawJulia maxIter = Pictures
     [ Translate (-200) (-400) $ Scale 2.5 2.5 $ Pictures [translate x y $ drawPoint (julia maxIter c (sx x, sy y)) | x <- [-250, -248..250], y <- [-250, -248..250]]
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show maxIter)
-    , Translate (-350) 200 $ button (-1)
+    , Translate (-300) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
   where
@@ -39,7 +39,7 @@ button sign = Pictures
 
 handleEvent :: Event -> GameState -> GameState
 handleEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) gameState
-    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = max 0 (gameState - 20)  -- Diminui iterações com botão esquerdo
+    | x >= -325 && x <= -275 && y >= 175 && y <= 225 = max 0 (gameState - 20)  -- Diminui iterações com botão esquerdo
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = gameState + 20             -- Aumenta iterações com botão direito
 handleEvent _ gameState = gameState
 

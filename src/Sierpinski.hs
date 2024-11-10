@@ -28,7 +28,7 @@ drawSierpinski :: GameState -> Picture
 drawSierpinski gameState = Pictures 
     [ Pictures (map (drawTriangle gameState) (sierpinski gameState ((-350, -350), (350, -350), (0, 350))))
     , Translate (-300) 300 $ Scale 0.2 0.2 $ Text ("Iteracoes: " ++ show gameState)
-    , Translate (-350) 200 $ button (-1)
+    , Translate (-300) 200 $ button (-1)
     , Translate 300 200 $ button 1
     ]
 
@@ -40,7 +40,7 @@ button sign = Pictures
 
 handleEvent :: Event -> GameState -> GameState
 handleEvent (EventKey (MouseButton LeftButton) Down _ (x, y)) gameState
-    | x >= -375 && x <= -325 && y >= 175 && y <= 225 = max 0 (gameState - 1)
+    | x >= -325 && x <= -275 && y >= 175 && y <= 225 = max 0 (gameState - 1)
     | x >= 275 && x <= 325 && y >= 175 && y <= 225 = gameState + 1
 handleEvent _ gameState = gameState
 
