@@ -79,7 +79,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 | -- | -- | -- | -- |
 | Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa | Commit tal (com link)
 |  Bruno Campos Ribeiro |
-|  Bruno Martins Valério Bomfim |
+|  Bruno Martins Valério Bomfim | (1) Estudo individual, pesquisa e testes, (2) Programação, desenvolvimento e aprimoramento do algoritmo de geração do fractal de Koch, (3) Auxílio no desenvolvimento do menu principal, (4) Auxílio na padronização e estruturação da arquitetura do projeto, (5) Apresentação da seção de "interface + fractal de koch" na produção do vídeo, (6) Participação nas reuniões e discussões em equipe, colaborando com ideias e sugestões | Excelente |  preencher | 
 |  Heitor Marques|
 |  Igor e Silva Penha |
 |  José Luís Ramos Teixeira |
