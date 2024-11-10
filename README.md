@@ -84,7 +84,10 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+![rep](imgs/exemplo-de-uso.gif)
+
+<div style="text-align:center"> Vídeo 1: Exemplo de uso da interface</div>
+<br>
 
 ## Instalação 
 **Linguagens**: Haskell<br>
