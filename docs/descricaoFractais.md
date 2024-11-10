@@ -49,9 +49,8 @@ Na **Imagem 2**, podemos observar a construção da curva conforme as iteraçõe
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/koch.png" width="550" />
-    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Koch</figcaption>
+    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Koch <font size="3"><p style="text-align: center"><b>Fonte: </b><a href="https://github.com/raqueleucaria">Raquel Eucaria</a> e <a href="https://github.com/gitbmvbs">Bruno Martins</a>, 2024</p></font> </figcaption>
   </figure>
-  <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
 </div>
 
 ### Conjunto de Mandelbrot:
@@ -174,3 +173,7 @@ _descrição, etc..._
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>
+
+## Fontes
+1. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
+2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.

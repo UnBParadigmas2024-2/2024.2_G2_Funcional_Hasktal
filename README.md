@@ -16,31 +16,35 @@
 | 21/1029405  |  Leonardo Gonçalves Machado |
 | 20/2016767  |  Lucas Felipe Soares |
 | 20/0062379  |  Marcos Vinícius de Deus |
-| 20/2045268  |  Raquel Eucaria Pereira da Costa |
+| 20/2045268  |  Raquel T. Eucaria Pereira da Costa |
 | 21/2002907  |  Zenilda Pedrosa Vieira |
 
 
 ## Sobre 
 
-O projeto visa representar visualmente uma variedade de fractais gerados a partir de padrões repetitivos. Utilizando Haskell, serão desenvolvidos processos iterativos para criar diferentes tipos de fractais, explorando suas propriedades geométricas e características únicas derivadas de funções matemáticas específicas. A tela inicial mostra os fractais que foram desenvolvidos, conforme a imagem 1:
-
-<div align="center">
-  <figure style="display: inline-block; margin-right: 20px;">
-    <img src="./imgs/telaInicial.png" width="300" />
-    <figcaption><br><strong>Imagem 1</strong>: Tela inicial com os fractais desenvolvidos</figcaption>
-  </figure>
-  <font size="3"><p style="text-align: center"><strong>Fonte:</strong> Autores</a>, 2024</p></font>
-</div>
+O projeto visa representar visualmente uma variedade de fractais gerados a partir de padrões repetitivos. Utilizando Haskell, serão desenvolvidos processos iterativos para criar diferentes tipos de fractais, explorando suas propriedades geométricas e características únicas derivadas de funções matemáticas específicas. 
 
 Mais informações sobre cada fractal podem ser encontradas no documento de [descrição dos fractais desenvolvidos](./docs/descricaoFractais.md).
 
 
 
 ## Screenshots
-![rep](./imgs/exemplo-de-uso.gif)
+A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1**. E o funcionamento no geral é apresentado no **Vídeo 1**.
 
-<div style="text-align:center"> Vídeo 1: Exemplo de uso da interface</div>
-<br>
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="./imgs/telaInicial.png" />
+   <figcaption><br><strong>Imagem 1</strong>: Tela inicial com os fractais desenvolvidos <br> <strong>Fonte:</strong> <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</figcaption>
+  </figure>
+</div>
+
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="./imgs/exemplo-de-uso.gif" />
+    <figcaption><br><strong>Vídeo 1:</strong> Exemplo de uso da interface <br> <strong>Fonte:</strong> <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</figcaption>
+  </figure>
+</div>
 
 ## Instalação 
 **Linguagens**: Haskell<br>
@@ -82,7 +86,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Leonardo Gonçalves Machado |
 |  Lucas Felipe Soares | Programação dos fractais de mandelbrot e Julia, revisão de código e documentação| Boa | Commits e histórico do git como: [exemplo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9b03ed6c5577f58023c9d4945ca18f3b56881a87)|
 |  Marcos Vinícius de Deus | Programação do fractal Árvore de Pitágoras, documentação, elaboração do roteiro e edição do vídeo da entrega | Excelente | [Commits e histórico git](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Roteiro do vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/issues/9) <br> [Vídeo]()|
-|  Raquel Eucaria Pereira da Costa |
+|  Raquel T. Eucaria Pereira da Costa | Estudo/teste, Programação do Fractal de Koch e documentação | Boa |[Estudo/teste]()<br>[Fractal Koch]()<br>[Descrição Koch]()<br>[README.md]()|
 |  Zenilda Pedrosa Vieira | Programação do fractal Árvore de Pitágoras de quadrados (Fractal Tree) <br> Programação do fractal Tapete de Siervinski (Siervinski Carpet) <br> Inclusão dos fractais na main <br> Formatação de layouts <br> Ajuda na escrita e formatação de tópicos do README e do documento de descricao dos fractais | Excelente | [Fractal Tree]() <br> [Siervinsk Carpet]() <br> [Fractais na main]() <br> [Layouts]() <br> [README.md]() <br>  [descricaoFractais.md]()|
 
 
@@ -101,3 +105,4 @@ Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não es
 ## Fontes
 1. HASKELL. Documentação do Haskell. Disponível em: <https://www.haskell.org/documentation>. Acesso em: 02 de Novembro de 2024.
 2. Wikipedia. Fractal. Disponível em: <https://pt.wikipedia.org/wiki/Fractal>. Acesso em: 02 de Novembro de 2024.
+3. HASKELL STACK. Install and upgrade. Disponível em: <https://docs.haskellstack.org/en/stable/install_and_upgrade/>. Acesso em: 02 nov. 2024.
