@@ -57,7 +57,7 @@ A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1
 3. No terminal, abra o diretório onde o arquivo `hasktal.cabal` esta localizado e execute:
     ```bash
     stack build
-    stack exec hasktal-exe
+    stack run
     ```
 
 ## Uso 
