@@ -183,19 +183,52 @@ A seguir, na **imagem 11**, podemos observar a construção do fractal conforme 
 
 ### Tapete de Sierpinski:
 
-_descrição, etc..._
+
+O tapete _Sierpiński_ é um fractal plano descrito pela primeira vez por Wacław
+Sierpiński em 1916.  O tapete é uma generalização do conjunto de Cantor definido
+para duas dimensões; outra generalização é o pó de Cantor.
+
+Em matemática, o conjunto de Cantor é um conjunto de pontos situados em um único
+segmento de reta que possui uma série de propriedades não intuitivas.  Através
+da consideração deste conjunto, Cantor e outros ajudaram a estabelecer as bases
+da topologia moderna de conjunto de pontos. A construção mais comum é o conjunto
+ternário de Cantor, construído removendo o terço médio de um segmento de reta e
+repetindo o processo com os demais segmentos mais curtos.
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="../imgs/CantorSet.png" width="300" />
+    <figcaption><br><strong>Imagem 12</strong>: Exemplo conjunto de Cantor ternário</figcaption>
+  </figure>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
+</div>
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="../imgs/CantorDust.gif" width="300" />
+    <figcaption><br><strong>Imagem 13</strong>: Exemplo pó de Cantor</figcaption>
+  </figure>
+  <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
+</div>
+
+A construção do tapete Sierpiński começa com um quadrado. O quadrado é cortado
+em 9 subquadrados congruentes em uma grade 3 por 3, e o subquadrado central é
+removido. O mesmo procedimento é então aplicado recursivamente aos 8
+subquadrados restantes, _ad infinitum_. Pode ser realizado como o conjunto de
+pontos no quadrado unitário cujas coordenadas escritas na base três não possuem
+ambos um dígito '1' na mesma posição, usando a representação numérica
+infinitesimal de 0.1111... = 0.2.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/SierpinskiCarpet1.png" width="300" />
-    <figcaption><br><strong>Imagem 12</strong>: Tapete de Sierpinski com 1 interações</figcaption>
+    <figcaption><br><strong>Imagem 14</strong>: Tapete de Sierpinski com 1 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>
 <div align="center">
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/SierpinskiCarpet7.png" width="300" />
-    <figcaption><br><strong>Imagem 13</strong>: Tapete de Sierpinski com 7 interações</figcaption>
+    <figcaption><br><strong>Imagem 15</strong>: Tapete de Sierpinski com 7 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>
@@ -219,4 +252,4 @@ _descrição, etc..._
 |`1.1`|10/11/2024|Formatação do documento e inclusão de imagens Fractal Tree e Sierpinski Carpet|[Zenilda Vieira](https://github.com/zenildavieira)|
 |`1.1`|10/11/2024|Descrição do Triângulo de Sierpinski e da Curva do Dragão|[José Luís](https://github.com/joseluis-rt) <br> [Igor Penha](https://github.com/igorpenhaa)|
 |`1.4`|10/11/2024|Introdução|[Heitor Marques](https://github.com/heitormsb)|
-|`1.5`|10/11/2024|||
+|`1.5`|10/11/2024|Documentação Sierpinski Carpet|[Bruno Ribeiro](https://github.com/BrunoRiibeiro.com)|
