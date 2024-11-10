@@ -44,12 +44,12 @@ A Curva de Koch é um fractal gerado por um algoritmo iterativo, que segue o seg
 3. Substituir o terço médio por um triângulo equilátero sem base de lado igual ao terço do segmento original.
 
 Esse processo é repetido recursivamente para cada segmento gerado, aumentando a complexidade da figura a cada iteração. O algoritmo segue esse ciclo em cada iteração, produzindo uma curva que se torna progressivamente mais detalhada e auto-similar, caracterizando o comportamento fractal da Curva de Koch. 
-Na **Imagem 2**, podemos observar a construção da curva conforme as iterações vão aumentando.
+Na **Imagem 3**, podemos observar a construção da curva conforme as iterações vão aumentando.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/koch.png" width="550" />
-    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Koch <font size="3"><p style="text-align: center"><b>Fonte: </b><a href="https://github.com/raqueleucaria">Raquel Eucaria</a> e <a href="https://github.com/gitbmvbs">Bruno Martins</a>, 2024</p></font> </figcaption>
+    <img src="../imgs/koch.png"/>
+    <figcaption><br><strong>Imagem 3</strong>: Fractal Curva de Koch <font size="3"><p style="text-align: center"><b>Fonte: </b><a href="https://github.com/gitbmvbs">Bruno Martins</a> e <a href="https://github.com/raqueleucaria">Raquel Eucaria</a>, 2024</p></font> </figcaption>
   </figure>
 </div>
 
