@@ -31,21 +31,41 @@ Os fractais desenvolvidos foram:
 
 #### Conjunto de Mandelbrot:
 
+O fractal de Mandelbrot é um dos fractais mais famosos e fascinantes. O fractal é definido pelo conjunto de todos os pontos complexos 
+para os quais a sequência gerada pela fórmula iterativa:
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="imgs/formulaMandelbrot.png" width="300" />
+    <figcaption><strong>Imagem 1</strong>: Fórmula do conjunto de Mandelbrot</figcaption>
+  </figure>
+</div>
+
+Algoritmicamente, o fractal de Mandelbrot é gerado ao iterar uma fórmula para cada ponto de uma grade de pixels, normalmente representada no plano complexo Cada ponto é tratado como um número complexo sendo sobre eles aplicado a fórmula anterior repetidamente para verificar se 
+z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 2** vamos visualizar como fica a imagem deste fractal:
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="imgs/mandelbrot.png" width="300" />
+    <figcaption><strong>Imagem 2</strong>: Fractal de Mandelbrot</figcaption>
+  </figure>
+</div>
+
 #### Árvore de Pitágoras:
 O fractal conhecido como "Árvore de Pitágoras" é um tipo de fractal geométrico que se assemelha a uma árvore, sendo composto por trapezios dispostos de forma recursiva. Esse fractal tem seu nome em homenagem ao Teorema de Pitágoras, pois a construção de cada "galho" segue a relação desse teorema.
 
 O algoritimo desenvolvido da árvore de pitágoras começa com um trapezio que representa o tronco da árvore. A partir dele, cinco trapezios menores são adicionados no topo, formando um ângulo em relação ao trapezio inicial, que simboliza os primeiros "galhos" da árvore. Esse processo é então repetido para cada novo trapezio, com uma rotação e uma escala que mantêm o formato e a proporção dos galhos, criando assim uma estrutura ramificada e cada vez mais complexa.
 
-A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 1** (com duas iterações). Já em um número maior de iterações, como na **Imagem 2** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
+A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 3** (com duas iterações). Já em um número maior de iterações, como na **Imagem 4** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/PythagorasTree2.png" width="300" />
-    <figcaption><strong>Imagem 1</strong>: Árvore de Pitágoras com 2 interações</figcaption>
+    <figcaption><strong>Imagem 3</strong>: Árvore de Pitágoras com 2 interações</figcaption>
   </figure>
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="imgs/PythagorasTree5.png" width="300" />
-    <figcaption><strong>Imagem 2</strong>: Árvore de Pitágoras com 5 interações</figcaption>
+    <figcaption><strong>Imagem 4</strong>: Árvore de Pitágoras com 5 interações</figcaption>
   </figure>
 </div>
 
@@ -87,6 +107,17 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) | Comprobatórios (ex. links para commits)
 | -- | -- | -- | -- |
 | Fulano  |  Programação dos Fatos da Base de Conhecimento Lógica | Boa | Commit tal (com link)
+|  Bruno Campos Ribeiro |
+|  Bruno Martins Valério Bomfim |
+|  Heitor Marques|
+|  Igor e Silva Penha |
+|  José Luís Ramos Teixeira |
+|  Leonardo Gonçalves Machado |
+|  Lucas Felipe Soares | Programação dos fractais de mandelbrot e Julia, revisão de código e documentação| Boa | Commits e histórico do git como: [exemplo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9b03ed6c5577f58023c9d4945ca18f3b56881a87)|
+|  Marcos Vinícius de Deus |
+|  Raquel Eucaria Pereira da Costa |
+|  Zenilda Pedrosa Vieira |
+
 
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
