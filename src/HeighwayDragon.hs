@@ -37,7 +37,9 @@ drawHeighwayDragon gameState = Pictures
     path = generateDragon gameState
 
     getColor :: Int -> Color
-    getColor i = makeColor (fromIntegral (i `mod` 365) / 255) 0.7 0.7 1.0
+    getColor i
+      | i < length path `div` 2 = red  -- Vermelha para a primeira metade
+      | otherwise = blue  -- Azul para a segunda metade
  
 
 button :: Int -> Picture
