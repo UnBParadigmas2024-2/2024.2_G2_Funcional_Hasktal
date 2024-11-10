@@ -190,3 +190,4 @@ _descrição, etc..._
 2. HOROBINSKI, Danyelle; FURTADO, Jéssica Gomes. Percorrendo a Curva de Koch. Curitiba, novembro de 2019. Disponível em: <https://docs.ufpr.br/~ewkaras/ensino/fractais/Koch.pdf>. Acesso em: 08 de Novembro de 2024.
 3. Matemateca IME USP. FRACTAIS. Disponível em: <https://matemateca.ime.usp.br/acervo/fractais.html>. Acesso em: 08 de Novembro de 2024.
 4. Fractais. Fractais. Disponível em: <https://www.aedi.ufpa.br/bom/images/pdf/Fractais.pdf>. Acesso em: 08 de Novembro de 2024.
+5. Urich, Rohan. The Dragon Curve (and a bit on Fractals). Disponível em: <https://rohanurich.wordpress.com/tag/heighway-dragon/>. Acesso em: 09 de Novembro de 2024.

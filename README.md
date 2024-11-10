@@ -82,7 +82,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Bruno Martins Valério Bomfim |
 |  Heitor Marques|
 |  Igor e Silva Penha |
-|  José Luís Ramos Teixeira |
+|  José Luís Ramos Teixeira | Elaboração da interface inicial do trabalho, programação dos fractais Curva de Dragão (Heighway Dragon) e Triângulo de Sierpinski, revisão de código e documentação. | Excelente | [Interface Inicial]() <br> [Curva de Dragão]() <br> [Descrição da Curva de Dragão]() <br> [Triângulo de Sierpinski]() |
 |  Leonardo Gonçalves Machado |
 |  Lucas Felipe Soares | Programação dos fractais de mandelbrot e Julia, revisão de código e documentação| Boa | Commits e histórico do git como: [exemplo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9b03ed6c5577f58023c9d4945ca18f3b56881a87)|
 |  Marcos Vinícius de Deus | Programação do fractal Árvore de Pitágoras, documentação, elaboração do roteiro e edição do vídeo da entrega | Excelente | [Commits e histórico git](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Roteiro do vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/issues/9) <br> [Vídeo]()|
