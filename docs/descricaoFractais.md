@@ -18,7 +18,7 @@ _descrição, etc..._
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/xxx.png" width="300" />
-    <figcaption><strong>Imagem 1</strong>: Conjunto de Julia com ??? interações</figcaption>
+    <figcaption><br><strong>Imagem 1</strong>: Conjunto de Julia com ??? interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</p></font>
 </div>
@@ -30,7 +30,7 @@ _descrição, etc..._
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/xxx.png" width="300" />
-    <figcaption><strong>Imagem 2</strong>: Curva de Dragão com ??? interações</figcaption>
+    <figcaption><br><strong>Imagem 2</strong>: Curva de Dragão com ??? interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
 </div>
@@ -49,7 +49,7 @@ Na **Imagem 2**, podemos observar a construção da curva conforme as iteraçõe
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/koch.png" width="550" />
-    <figcaption><strong>Imagem 2</strong>: Fractal Curva de Koch</figcaption>
+    <figcaption><br><strong>Imagem 2</strong>: Fractal Curva de Koch</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
 </div>
@@ -62,7 +62,7 @@ para os quais a sequência gerada pela fórmula iterativa:
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/formulaMandelbrot.png" width="300" />
-    <figcaption><strong>Imagem 4</strong>: Fórmula do conjunto de Mandelbrot <br> <strong>Fonte:</strong> <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 4</strong>: Fórmula do conjunto de Mandelbrot <br> <strong>Fonte:</strong> <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
@@ -72,7 +72,7 @@ z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 5** vamos 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/mandlbrotInicial.png" width="300" />
-    <figcaption><strong>Imagem 5:</strong> Fractal de Mandelbrot, sem nenhuma iteração <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 5:</strong> Fractal de Mandelbrot, sem nenhuma iteração <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
@@ -80,7 +80,7 @@ z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 5** vamos 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/mandelbrot.png" width="300" />
-    <figcaption><strong>Imagem 6:</strong> Fractal de Mandelbrot, após algumas iterações <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
+    <figcaption><br><strong>Imagem 6:</strong> Fractal de Mandelbrot, após algumas iterações <br> <strong>Fonte:</strong> <a href="https://github.com/leonardogonmac">Leonardo Machado</a> e <a href="https://github.com/lucasfs1007">Lucas Felipe</a>, 2024</figcaption>
   </figure>
 </div>
 
@@ -95,13 +95,13 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/PythagorasTree2.png" width="300" />
-    <figcaption><strong>Imagem 7</strong>: Árvore de Pitágoras com 2 interações</figcaption>
+    <figcaption><br><strong>Imagem 7</strong>: Árvore de Pitágoras com 2 interações</figcaption>
   </figure>
 <!-- </div>
 <div align="center"> -->
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/PythagorasTree5.png" width="300" />
-    <figcaption><strong>Imagem 8</strong>: Árvore de Pitágoras com 5 interações</figcaption>
+    <figcaption><br><strong>Imagem 8</strong>: Árvore de Pitágoras com 5 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/heitormsb">Heitor Marques</a> e <a href="https://github.com/Marcos574">Marcos Vinícius</a>, 2024</p></font>
 </div>
@@ -113,13 +113,13 @@ _descrição, etc..._
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/fractalTree6.png" width="300" />
-    <figcaption><strong>Imagem 9</strong>: Árvore de Pitágoras de quadrados com 6 interações</figcaption>
+    <figcaption><br><strong>Imagem 9</strong>: Árvore de Pitágoras de quadrados com 6 interações</figcaption>
   </figure>
 <!-- </div>
 <div align="center"> -->
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/fractalTree15.png" width="300" />
-    <figcaption><strong>Imagem 10</strong>: Árvore de Pitágoras de quadrados com 15 interações</figcaption>
+    <figcaption><br><strong>Imagem 10</strong>: Árvore de Pitágoras de quadrados com 15 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a>, 2024</p></font>
 </div>
@@ -152,7 +152,7 @@ A seguir, na **imagem 11**, podemos observar a construção do fractal conforme 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/interacoes-triangulo.png" width="550" />
-    <figcaption><strong>Imagem 11</strong>: Fractal triângulo de Sierpinski</figcaption>
+    <figcaption><br><strong>Imagem 11</strong>: Fractal triângulo de Sierpinski</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b> <strong>Fonte:</strong> <a href="https://github.com/joseluis-rt">José Luís</a> e <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</p></font>
 </div>
@@ -164,13 +164,13 @@ _descrição, etc..._
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="../imgs/SierpinskiCarpet1.png" width="300" />
-    <figcaption><strong>Imagem 12</strong>: Tapete de Sierpinski com 1 interações</figcaption>
+    <figcaption><br><strong>Imagem 12</strong>: Tapete de Sierpinski com 1 interações</figcaption>
   </figure>
 <!-- </div>
 <div align="center"> -->
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="../imgs/SierpinskiCarpet7.png" width="300" />
-    <figcaption><strong>Imagem 13</strong>: Tapete de Sierpinski com 7 interações</figcaption>
+    <figcaption><br><strong>Imagem 13</strong>: Tapete de Sierpinski com 7 interações</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
 </div>

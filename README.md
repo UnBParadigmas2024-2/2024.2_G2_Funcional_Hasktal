@@ -27,7 +27,7 @@ O projeto visa representar visualmente uma variedade de fractais gerados a parti
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="./imgs/telaInicial.png" width="300" />
-    <figcaption><strong>Imagem 1</strong>: Tela inicial com os fractais desenvolvidos</figcaption>
+    <figcaption><br><strong>Imagem 1</strong>: Tela inicial com os fractais desenvolvidos</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><strong>Fonte:</strong> Autores</a>, 2024</p></font>
 </div>
