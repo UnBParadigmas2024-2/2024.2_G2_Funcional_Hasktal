@@ -88,16 +88,20 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 
 ## Instalação 
 **Linguagens**: Haskell<br>
-**Tecnologias**: Gloss<br>
-
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
-Gifs animados e outras ilustrações são bem-vindos!
+**Tecnologias**: Stack<br>
+1. Instale o `stack`,  o tutorial de instalação pode ser encontrado [aqui](https://docs.haskellstack.org/en/stable/install_and_upgrade/).
+2. Clone o repositório 
+    ```bash
+    git clone https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal.git
+    ```
+3. No terminal, abra o diretório onde o arquivo `hasktal.cabal` esta localizado e execute:
+    ```bash
+    stack build
+    stack exec hasktal-exe
+    ```
 
 ## Uso 
-Explique como usar seu projeto.
-Procure ilustrar em passos, com apoio de telas do software, seja com base na interface gráfica, seja com base no terminal.
-Nessa seção, deve-se revelar de forma clara sobre o funcionamento do software.
+A partir dessa tela, é possível aumentar as iterações clicando no botão com o símbolo de mais (+), gerando progressivamente a imagem do fractal. O usuário também pode reduzir o número de iterações utilizando o botão com o símbolo de menos (-). Para retornar ao menu inicial e selecionar outro fractal, basta clicar no botão "Voltar".
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
