@@ -196,7 +196,7 @@ removendo o terço médio de um segmento de reta e repetindo o processo com os d
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="../imgs/ContorSet.png" width="300" />
+    <img src="../imgs/CantorSet.png" width="300" />
     <figcaption><br><strong>Imagem 12</strong>: Exemplo conjunto de Cantor ternário</figcaption>
   </figure>
   <font size="3"><p style="text-align: center"><b>Fonte:</b>  <a href="https://github.com/BrunoRiibeiro">Bruno Ribeiro</a> e <a href="https://github.com/zenildavieira">Zenilda Vieira</a></font>
