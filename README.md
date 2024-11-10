@@ -95,6 +95,34 @@ A complexidade da árvore é controlada pelo número de iterações (ou profundi
 
 
 #### Triângulo de Sierpinski:
+O Triângulo de Sierpinski é um fractal e um exemplo de um conjunto auto-similar, onde uma figura é composta por cópias de si mesma. Ele foi descrito pelo matemático polonês Wacław Sierpiński em 1915 e é obtido por um processo de divisão recursiva de triângulos. A construção começa com um triângulo equilátero e, em cada iteração, os triângulos menores são removidos para formar uma nova geração do fractal.
+
+##### Propriedades e Curiosidades
+
+* O Triângulo de Sierpinski possui auto-similaridade exata, o que significa que, independentemente do nível de ampliação, ele sempre parece o mesmo. Isso é característico de fractais, onde as partes menores replicam o todo.
+* O fractal é criado por um processo recursivo, onde um triângulo é repetidamente subdividido em triângulos menores.
+* Embora seja construído em um espaço bidimensional, o Triângulo de Sierpinski possui uma dimensão fractal entre 1 e 2. Sua dimensão é log(3)/log(2) ≈ 1,585, refletindo o fato de que ele ocupa mais espaço do que uma linha, mas menos do que uma área bidimensional completa.
+* À medida que o processo de subdivisão continua indefinidamente, a área do Triângulo de Sierpinski converge para zero. Isso ocorre porque, em cada etapa, uma fração do triângulo original é removida.
+* O perímetro, no entanto, aumenta a cada iteração, tornando-se infinitamente longo. Esse comportamento ilustra a diferença entre área e perímetro em fractais e em formas geométricas clássicas.
+
+##### Lógica implementada do Triângulo de Sierpinski
+* Passo 1: Comece com um triângulo equilátero.
+* Passo 2: Divida o triângulo em quatro triângulos menores conectando os pontos médios de cada lado.
+* Passo 3: Remova o triângulo central.
+* Passo 4: Repita os passos 2 e 3 para cada um dos triângulos restantes.
+
+##### Extra
+Adição da mudança de cor dos triângulos restantes por meio da função makeColor, para que a mudança ocorrece a cada interação foi utilizada a função fromIntegral passando como argumento a profundidadde da interação. Dessa maneira, cada interação irá obter sua própria coloração de triângulos.
+
+A seguir, na imagem 7, podemos observar a construção do fractal conforme as iterações vão aumentando.
+
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="imgs/interacoes-triangulo.png" width="550" />
+    <figcaption><strong>Imagem 7</strong>: Fractal triângulo de Sierpinski</figcaption>
+  </figure>
+</div>
 
 #### Tapete de Sierpinsk:
 
