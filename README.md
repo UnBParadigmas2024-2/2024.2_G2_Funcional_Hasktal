@@ -28,6 +28,22 @@ O projeto visa representar visualmente uma variedade de fractais gerados a parti
 
 #### Curva de Koch:
 
+A Curva de Koch é um fractal gerado por um algoritmo iterativo, que segue o seguinte processo geométrico:
+
+1. Iniciar com um segmento de comprimento L. 
+2. Retirar o terço médio do segmento inicial. 
+3. Substituir o terço médio por um triângulo equilátero sem base de lado igual ao terço do segmento original.
+
+Esse processo é repetido recursivamente para cada segmento gerado, aumentando a complexidade da figura a cada iteração. O algoritmo segue esse ciclo em cada iteração, produzindo uma curva que se torna progressivamente mais detalhada e auto-similar, caracterizando o comportamento fractal da Curva de Koch. 
+Na **Imagem 1**, podemos observar a construção da curva conforme as iterações vão aumentando.
+
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="imgs/koch.png" width="550" />
+    <figcaption><strong>Imagem 1</strong>: Fractal Curva de Koch</figcaption>
+  </figure>
+</div>
+
 #### Conjunto de Mandelbrot:
 
 O fractal de Mandelbrot é um dos fractais mais famosos e fascinantes. O fractal é definido pelo conjunto de todos os pontos complexos 
@@ -36,17 +52,17 @@ para os quais a sequência gerada pela fórmula iterativa:
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/formulaMandelbrot.png" width="300" />
-    <figcaption><strong>Imagem 1</strong>: Fórmula do conjunto de Mandelbrot</figcaption>
+    <figcaption><strong>Imagem 2</strong>: Fórmula do conjunto de Mandelbrot</figcaption>
   </figure>
 </div>
 
 Algoritmicamente, o fractal de Mandelbrot é gerado ao iterar uma fórmula para cada ponto de uma grade de pixels, normalmente representada no plano complexo Cada ponto é tratado como um número complexo sendo sobre eles aplicado a fórmula anterior repetidamente para verificar se 
-z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 2** vamos visualizar como fica a imagem deste fractal em seu momento inicial, posteriormente, na **imagem 3**, vamos demonstrar após dadas iterações:
+z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 3** vamos visualizar como fica a imagem deste fractal em seu momento inicial, posteriormente, na **imagem 4**, vamos demonstrar após dadas iterações:
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/mandlbrotInicial.png" width="300" />
-    <figcaption><strong>Imagem 2</strong>: Fractal de Mandelbrot, sem nenhuma iteração</figcaption>
+    <figcaption><strong>Imagem 3</strong>: Fractal de Mandelbrot, sem nenhuma iteração</figcaption>
   </figure>
 </div>
 
@@ -54,7 +70,7 @@ z diverge (escapa para o infinito) ou permanece limitado. Na **Imagem 2** vamos 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/mandelbrot.png" width="300" />
-    <figcaption><strong>Imagem 3</strong>: Fractal de Mandelbrot, após algumas iterações</figcaption>
+    <figcaption><strong>Imagem 4</strong>: Fractal de Mandelbrot, após algumas iterações</figcaption>
   </figure>
 </div>
 
@@ -63,16 +79,16 @@ O fractal conhecido como "Árvore de Pitágoras" é um tipo de fractal geométri
 
 O algoritimo desenvolvido da árvore de pitágoras começa com um trapezio que representa o tronco da árvore. A partir dele, cinco trapezios menores são adicionados no topo, formando um ângulo em relação ao trapezio inicial, que simboliza os primeiros "galhos" da árvore. Esse processo é então repetido para cada novo trapezio, com uma rotação e uma escala que mantêm o formato e a proporção dos galhos, criando assim uma estrutura ramificada e cada vez mais complexa.
 
-A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 3** (com duas iterações). Já em um número maior de iterações, como na **Imagem 4** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
+A complexidade da árvore é controlada pelo número de iterações (ou profundidade recursiva) aplicadas. Em um número baixo de iterações, a árvore terá uma estrutura mais simples, como na **Imagem 5** (com duas iterações). Já em um número maior de iterações, como na **Imagem 6** (com cinco iterações), a árvore exibe uma quantidade maior de detalhes e uma estrutura que se assemelha mais a uma árvore real.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
     <img src="imgs/PythagorasTree2.png" width="300" />
-    <figcaption><strong>Imagem 3</strong>: Árvore de Pitágoras com 2 interações</figcaption>
+    <figcaption><strong>Imagem 5</strong>: Árvore de Pitágoras com 2 interações</figcaption>
   </figure>
   <figure style="display: inline-block; margin-left: 20px;">
     <img src="imgs/PythagorasTree5.png" width="300" />
-    <figcaption><strong>Imagem 4</strong>: Árvore de Pitágoras com 5 interações</figcaption>
+    <figcaption><strong>Imagem 6</strong>: Árvore de Pitágoras com 5 interações</figcaption>
   </figure>
 </div>
 
