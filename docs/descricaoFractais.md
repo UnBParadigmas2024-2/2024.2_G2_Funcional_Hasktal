@@ -252,7 +252,7 @@ A construção do tapete Sierpiński começa com um quadrado. O quadrado é cort
 
 | Versão | Data       | Descrição                                                                      |                                                 Autor                                                 |
 | :----: | ---------- | ------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------: |
-| `1.0`  | 09/11/2024 | Documentação da Árvore de Pitágoras                                            | [Heitor Marques](https://github.com/heitormsb) <br> [Marcos Vinícius]("https://github.com/Marcos574)  |
+| `1.0`  | 09/11/2024 | Documentação da Árvore de Pitágoras                                            | [Heitor Marques](https://github.com/heitormsb) <br> [Marcos Vinícius](https://github.com/Marcos574)  |
 | `1.1`  | 09/11/2024 | Documentação da Mandelbrot                                                     | [Lucas Felipe](https://github.com/lucasfs) <br> [Leonardo Machado](https://github.com/leonardogonmac) |
 | `1.2`  | 10/11/2024 | Descrição da Curva de Koch                                                     | [Bruno Martins](https://github.com/gitbmvbs) <br> [Raquel Eucaria](https://github.com/raqueleucaria)  |
 | `1.3`  | 10/11/2024 | Formatação do documento e inclusão de imagens Fractal Tree e Sierpinski Carpet |                          [Zenilda Vieira](https://github.com/zenildavieira)                           |
