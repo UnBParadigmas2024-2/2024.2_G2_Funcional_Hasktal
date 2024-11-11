@@ -82,7 +82,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Bruno Martins Valério Bomfim | (1) Estudo individual, pesquisa e testes;<br> (2) Programação, desenvolvimento e aprimoramento do algoritmo de geração do fractal de Koch;<br> (3) Auxílio no desenvolvimento do menu principal;<br> (4) Auxílio na padronização e estruturação da arquitetura do projeto;<br> (5) Apresentação da seção de "interface + fractal de koch" na produção do vídeo;<br> (6) Participação nas reuniões e discussões em equipe, colaborando com ideias e sugestões (via Teams e Telegram) | Excelente |  (1) [Commit 8344c64](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/8344c64c096453b8ca36ea51b2d5f91f1b1a07ed) <br> (2) [Commit 2b075e5](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/2b075e5b59d17c1209d08bdd96993e9ea6134f6b) <br> (3) [Commit 355c7a5](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/355c7a53cb0f3aa824be101154bed7782a7e15a9), [Commit ed33c37](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/ed33c37197b6cb57e6fdbde8a9892c01b49380c7) <br> (4) [Commit ad8ad5f](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/ad8ad5f917fa60c845cc0c9ffe8d644fe8842e7e) <br> (5) [Vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal?tab=readme-ov-file#v%C3%ADdeo) | 
 |  Heitor Marques| Programação do fractal Árvore de Pitágoras, documentação sobre fractal Árvore de Pitágoras e documentação sobre fractais |  Excelente | [Árvore de Pitágoras](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Doc. Árvore de Pitágoras](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/f886a43ffaf30b0c1a3dd396ad0a84d7d84a8819) <br> [Doc. fractais](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/4450cd5b616c1b7c44c20c6fdfad0b7f5c52b1c9)|
 |  Igor e Silva Penha |
-|  José Luís Ramos Teixeira | Elaboração da interface inicial do trabalho, programação dos fractais Curva de Dragão (Heighway Dragon) e Triângulo de Sierpinski, revisão de código e documentação. | Excelente | [Interface Inicial]() <br> [Curva de Dragão]() <br> [Descrição da Curva de Dragão]() <br> [Triângulo de Sierpinski]() |
+|  José Luís Ramos Teixeira | Elaboração da interface inicial do trabalho, programação dos fractais Curva de Dragão (Heighway Dragon) e Triângulo de Sierpinski, revisão de código e documentação. | Excelente | [Interface Inicial](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/95217e7d6eb041518753bbd246dbc630bbf50fb0) <br> [Curva de Dragão](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/38f062a23cb46e7b4e1b24bffd1b7b9a3426b0b1) <br> [Descrição da Curva de Dragão](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/c414ff1efd64d7e5494fb34c886f9a9f45681af7) <br> [Triângulo de Sierpinski](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9821d11e35fc0516df8c06d27b37ec60eb1e143b) |
 |  Leonardo Gonçalves Machado | Elaboração do código do fractal do Conjunto de Julia, ajustes na interface do fractal de Mandelbrot e documentação do fractal do Conjunto de Julia | Excelente | [Lista de commits](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/main/?author=leonardogonmac) |
 |  Lucas Felipe Soares | Programação dos fractais de mandelbrot e Julia, revisão de código e documentação| Boa | Commits e histórico do git como: [exemplo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9b03ed6c5577f58023c9d4945ca18f3b56881a87)|
 |  Marcos Vinícius de Deus | Programação do fractal Árvore de Pitágoras, documentação, elaboração do roteiro e edição do vídeo da entrega | Excelente | [Commits e histórico git](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Roteiro do vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/issues/9) <br> [Vídeo]()|
@@ -93,13 +93,22 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 ## Outros 
 Quaisquer outras informações sobre o projeto podem ser descritas aqui. Não esqueça, entretanto, de informar sobre:
 
-(i) Lições Aprendidas;
+#### (I) Lições Aprendidas
+- **Desenvolvimento em Haskell:** Aprendizado dos principais conceitos em sala de aula e aprofundamento durante o desenvolvimento do projeto.
+- **Uso da ferramenta Stack:** Ferramenta de gerenciamento de projetos Haskell, que simplifica o processo de construção, execução e gerenciamento de dependências.
 
-(ii) Percepções;
+#### (II) Percepções
+- O Haskell é uma linguagem interessante, que pode facilitar em muitos aspectos, mas, por ser uma linguagem funcional com abordagem distinta, pode gerar certa dificuldade.
+- Divisão da equipe com uma boa comunicação geral proporcionou um desenvolvimento produtivo e tranquilo.
 
-(iii) Contribuições e Fragilidades, e
+#### (III) Contribuições e Fragilidades
+- **Contribuições:** Desenvolvimento das funcionalidades principais em Haskell, uso eficiente da biblioteca escolhida, e esforço colaborativo.
+- **Fragilidades:** Algumas bibliotecas em Haskell, como **JuicyPixels**, apresentaram limitações e problemas, o que trouxe dificuldades para o trabalho com imagens.
 
-(iV) Trabalhos Futuros.
+#### (IV) Trabalhos Futuros
+- Modularizar os botões (**+**, **-** e **Voltar**) para evitar repetição de código, tornando o código mais limpo e reutilizável.
+- Adicionar funcionalidade de zoom (in e out) nos fractais, permitindo uma observação mais detalhada das estruturas.
+- Avaliar outras bibliotecas ou abordagens para lidar com processamento de imagens em Haskell.
 
 
 ## Fontes
