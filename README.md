@@ -29,7 +29,7 @@ Mais informações sobre cada fractal podem ser encontradas no documento de [des
 
 
 ## Screenshots
-A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1**. E o funcionamento no geral é apresentado no **Vídeo 1**.
+A tela inicial mostra a lista de fractais que foram desenvolvidos, conforme a **Imagem 1**. E a execução deles de forma geral é apresentado no **Vídeo 1**.
 
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
@@ -37,13 +37,11 @@ A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1
    <figcaption><br><strong>Imagem 1</strong>: Tela inicial com os fractais desenvolvidos <br> <strong>Fonte:</strong> <a href="https://github.com/zenildavieira">Zenilda Vieira</a>, 2024</figcaption>
   </figure>
 </div>
-
 <br>
-
 <div align="center">
   <figure style="display: inline-block; margin-right: 20px;">
-    <img src="./imgs/exemplo-de-uso.gif" />
-    <figcaption><br><strong>Vídeo 1:</strong> Exemplo de uso da interface <br> <strong>Fonte:</strong> <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</figcaption>
+    <img src="./imgs/fractais.gif" />
+    <figcaption><br><strong>Vídeo 1:</strong> Telas dos fractais desenvolvidos<br> <strong>Fonte:</strong> <a href="https://github.com/raqueleucaria">Raquel Eucaria</a>, 2024</figcaption>
   </figure>
 </div>
 
@@ -63,6 +61,12 @@ A tela inicial mostra os fractais que foram desenvolvidos, conforme a **Imagem 1
 
 ## Uso 
 A partir dessa tela, é possível aumentar as iterações clicando no botão com o símbolo de mais (+), gerando progressivamente a imagem do fractal. O usuário também pode reduzir o número de iterações utilizando o botão com o símbolo de menos (-). Para retornar ao menu inicial e selecionar outro fractal, basta clicar no botão "Voltar".
+<div align="center">
+  <figure style="display: inline-block; margin-right: 20px;">
+    <img src="./imgs/exemplo-de-uso.gif" />
+    <figcaption><br><strong>Vídeo 2:</strong> Exemplo de uso da interface <br> <strong>Fonte:</strong> <a href="https://github.com/igorpenhaa">Igor Penha</a>, 2024</figcaption>
+  </figure>
+</div>
 
 ## Vídeo
 Clique [aqui](https://youtu.be/0ASRaD9DWEQ) para ver o vídeo!
@@ -79,7 +83,7 @@ Apresente, brevemente, como cada membro do grupo contribuiu para o projeto.
 |  Leonardo Gonçalves Machado | Elaboração do código do fractal do Conjunto de Julia, ajustes na interface do fractal de Mandelbrot e documentação do fractal do Conjunto de Julia | Excelente | [Lista de commits](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/main/?author=leonardogonmac) |
 |  Lucas Felipe Soares | Programação dos fractais de mandelbrot e Julia, revisão de código, documentações, estudos acerca dos fractais, elaboração e ajuste da interface| Excelente| Commits e histórico do git como: [Mandelbrot](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/9b03ed6c5577f58023c9d4945ca18f3b56881a87)<br> [Documentação Final](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/7499b7c5ede80380bfed2405047ab3cae40213d1)|
 |  Marcos Vinícius de Deus | Programação do fractal Árvore de Pitágoras, documentação, elaboração do roteiro e edição do vídeo da entrega | Excelente | [Commits e histórico git](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/df4288c61085d8cfb6157bc12b2e026439acd394) <br> [Doc. Árvore de Pitágoras](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/f886a43ffaf30b0c1a3dd396ad0a84d7d84a8819) <br> [Roteiro do vídeo](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/issues/9) <br> Edição do vídeo <br> [Vídeo](https://youtu.be/0ASRaD9DWEQ)|
-|  Raquel T. Eucaria Pereira da Costa | Estudo/teste, Programação do Fractal de Koch e documentação | Boa |[Informações iniciais](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/568874de10be82d5995226fc2d8f2b122aaca640)<br>[Estudo/teste](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/14f01281e8e149ee281b8fe4881afce12d4116be)<br>[Fractal Koch](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/2b075e5b59d17c1209d08bdd96993e9ea6134f6b)<br>[Descrição Koch](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/107b293ab87c27d4db7ee68109e6feca48ab911f)<br>[Manual Instalação/Uso](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/092a8fb89d948b9d1dfbd431bf5c19c0f1c762fb)<br>[Ajuste documentação](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/3414307cc9d2df8e6918e4726d437a11c0a706c6)|
+|  Raquel T. Eucaria Pereira da Costa | Estudo/teste, Programação do Fractal de Koch e documentação | Excelente |[Informações iniciais](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/568874de10be82d5995226fc2d8f2b122aaca640)<br>[Estudo/teste](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/14f01281e8e149ee281b8fe4881afce12d4116be)<br>[Fractal Koch](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/2b075e5b59d17c1209d08bdd96993e9ea6134f6b)<br>[Descrição Koch](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/107b293ab87c27d4db7ee68109e6feca48ab911f)<br>[Manual Instalação/Uso](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/092a8fb89d948b9d1dfbd431bf5c19c0f1c762fb)<br>[Ajuste documentação](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commit/3414307cc9d2df8e6918e4726d437a11c0a706c6)|
 |  Zenilda Pedrosa Vieira | Programação do fractal Árvore de Pitágoras de quadrados (Fractal Tree) <br> Programação do fractal Tapete de Siervinski (Siervinski Carpet) <br> Inclusão dos fractais na main <br> Formatação de layouts <br> Ajuda na escrita e formatação de tópicos do README e do documento de descricao dos fractais | Excelente | [Fractal Tree](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/FractalTree/src?author=ZenildaVieira) <br> [Siervinsk Carpet](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/SierpinskiCarpet/src?author=ZenildaVieira) <br> [Fractais na main](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/SierpinskiCarpet/app?author=ZenildaVieira) <br> [Layouts](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/FractalTree/app?author=ZenildaVieira) <br> [README.md](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/documentacaoFinal/README.md?author=ZenildaVieira) <br>  [descricaoFractais.md](https://github.com/UnBParadigmas2024-2/2024.2_G2_Funcional_Hasktal/commits/documentacaoFinal/docs/descricaoFractais.md?author=ZenildaVieira)|
 
 
